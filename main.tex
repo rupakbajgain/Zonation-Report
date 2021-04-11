@@ -1,10 +1,12 @@
-\documentclass[12pt, a4paper, hidelinks]{scrreprt}
+\documentclass[11pt, a4paper, hidelinks]{report}
 
+\usepackage[a4paper,width=150mm,top=25mm,bottom=25mm]{geometry}
 \usepackage{graphicx}
+%\usepackage{titlecaps}
 \usepackage{boxedminipage}
 \usepackage{amssymb,amsmath}
 \usepackage{times}%Times new roman
-%\usepackage{sectsty}
+\usepackage{sectsty}
 \usepackage[nottoc,notlot,notlof]{tocbibind}
 \usepackage{tikz}
 \usepackage{sidecap}
@@ -27,10 +29,10 @@
 }
 
 %\makeindex
-%\chapterfont{\fontsize{12}{15}\selectfont}
-%\sectionfont{\fontsize{12}{15}\selectfont}
-%\subsectionfont{\fontsize{12}{15}\selectfont}
-%\subsubsectionfont{\fontsize{12}{15}\selectfont}
+\chapterfont{\bfseries}
+\sectionfont{\fontsize{13}{2}\selectfont}
+\subsectionfont{\fontsize{12}{2}\selectfont}
+\subsubsectionfont{\fontsize{11}{15}\selectfont}
 %paragraphfont
 %subparagraphfont
 
@@ -46,11 +48,11 @@
 	%%\newpage\null\thispagestyle{empty}\newpage
 	\pagenumbering{roman}
 	\include{pages/preface}
-	\include{pages/limitationsofuse}
+	%\include{pages/limitationsofuse}
 	\include{pages/acknow}
 
 	%Tables
-	\tableofcontents
+	%tableofcontents
 	\listoftables
 	\listoffigures
 	\include{pages/sym}
@@ -63,11 +65,13 @@
 	\include{pages/lit_rev}
 	\include{pages/mat_meth}
 	%now Results
-	%\include{pages/result}
+	\include{pages/result}
+	\include{pages/discussion}
+	\include{pages/conclusion}
 
 	%Followed by annex
 	\appendix
-		%\include{pages/annex-a}
+		\include{pages/annex-a}
 		\include{pages/annex-b}
 		\include{in/codes}
 		\include{in/demo}

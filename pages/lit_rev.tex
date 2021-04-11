@@ -34,6 +34,14 @@ In designing shallow foundations, two possible failure mechanisms\index{failure 
   \item Excessive settlement leading to differential settlement\index{diffrential settlement|see{failure mechanisms}} in excess of that tolerable for the supported structures.
 \end{itemize}
 
+\subsection{Three modes of shear failure}
+\subsubsection{General Shear Failure}
+A continuous failure surface is developed between the edges of the footing which extends up to the ground. As the applied pressure through the footing increases to the range of ultimate bearing capacity, plastic conditions develop around the edge of the footing that spread downward and then outward to the ground surface. Equilibrium is developed along that failure surface. Heave is seen on both sides of the footing. This mode of failure prevails in very dense soil.
+\subsubsection{Local shear failure}
+This mode of failure prevails in highly compressible soil and the failure mode is characterized by occurrence of relatively large settlement. Partial development of the state of plastic equilibrium occurs and the failure surface does not extend to the ground surface. Slight heave formation occurs on the surface.
+\subsubsection{Punching Shear Failure}
+It occurs when there is relatively high compression of soil under footing accompanied by shearing in the vertical direction around the edges of the footing. Failure is not accompanied by any heaving or any tilting. This mode of failure prevails in a soil of low compressibility and where the foundation is located at a significant depth.
+
 Bearing capacity is the capacity of soil to support the loads applied to the ground. The bearing capacity of soil is the maximum average contact pressure between the foundation and the soil which should not produce shear failure in the soil. Ultimate bearing capacity is the theoretical maximum pressure which can be supported without failure; allowable bearing capacity is the ultimate bearing capacity divided by a factor of safety. Sometimes, on soft soil sites, large settlements may occur under loaded foundations without actual shear failure occurring; in such cases, the allowable bearing capacity is based on the maximum allowable settlement. Some terms used in bearing capacity are:
 \begin{itemize}
 \item \textbf{Ultimate bearing capacity($q_u$):} The ultimate bearing capacity is the gross pressure at the base of foundation at which soil fails in shear.
@@ -298,11 +306,19 @@ i_{\gamma}=(1-\frac{\alpha}{\phi})^2
 \end{gather}
 
 \subsection{Teng's method}
-Teng\index{Teng} gave the relaction between SPT value and $Q_u$ directly for square footing as
+Teng expressed the charts given by Terzaghi and Peck (1948) in the form of following formulae. He also added the allowance for increase in preface with depth by introducing a depth factor.
 \begin{equation}
-q_nu = 0.11 N^2 B R_{W1} + 0.33 (100+N^2)D_f*R{W2}
+q_a = 35 (N-3) (\frac{B+0.3}{B})^2 W_\gamma R_d
 \end{equation}
+where,
+$q_a$ = allowable bearing capacity for 25 mm settlement.,\\
+$W_\gamma$ = water table correction factor.\\
+$R_d$ = depth factor = $1 + \frac{D_f}{B}$
 
+Also, from shear criteria,
+\begin{equation}
+q_nu = 0.11 N^2 B {W_\gamma} + 0.33 (100+N^2)D_f*{W_\gamma}
+\end{equation}
 
 \subsection{Peck method}
 Terzaghi and Peck (1967) gave charts for the safe bearing pressures introducing a total settlement of 25 mm and a differential settlement of 19 mm for different footings. Peck et al (1974) revised the Terzaghi and Peck curves to consider in later research, and gave following equations for the safe settlement pressure.
@@ -328,10 +344,26 @@ $D_w$ is Depth of water below ground surface.\\
 $D_f$  is depth of footing.\\
 $B$ is width of footing.
 
+\subsection{Bowles theory}
+The bearing capacity of a soil is given by Terzaghi and Peck was found to be very conservative. Meyerhof (1956,1974) published equation for computing the allowable bearing for a 25 mm settlement, which also underestimated the value. Bowels, for this reason, adjusted the Meyerhof equation by a multiplication factor of 1.5.
+\begin{equation}
+q_a = \begin{cases}
+			\frac{N}{F_1} R_d * W_\gamma, & B \le F_4 \\
+			\frac{N}{F_2}(\frac{B+F_3}{B})^2 R_d, & B \textgreater F_4
+		\end{cases}
+\end{equation}
+\begin{equation}
+R_d = 1 + 0.33 \frac{D}{B} \le 1.33 
+\end{equation} (Meyerhof 1965)
+where,\\
+$q_a$  = allowable bearing capacity for settlement of 25mm, unit is kPa.,\\
+$N$ = For $E_r$ 55\\
+$F_1$ = 0.05, $F_2$ = 0.08, $F_3$ = 0.3 ,and $F_4$ = 1.2, for SI units.
+
 \subsection{Finite element method}
 The finite element method\index{FEM} (FEM) is the most widely used method for solving problems of engineering and mathematical models. Typical problem areas of interest include the traditional fields of structural analysis, heat transfer, fluid flow, mass transport, and electromagnetic potential. The FEM is a particular numerical method for solving partial differential equations in two or three space variables (i.e., some boundary value problems). To solve a problem, the FEM subdivides a large system into smaller, simpler parts that are called finite elements. This is achieved by a particular space discretisation in the space dimensions, which is implemented by the construction of a mesh of the object: the numerical domain for the solution, which has a finite number of points. 
 \subsubsection{PLAXIS}
-PLAXIS\index{PLAXIS} is a finite element program for geotechnical applications in which soil models are used to simulate the soil behavior. The PLAXIS code and its soil models have been developed with great care. Although a lot of testing and validation have been performed, it cannot be guaranteed that the PLAXIS code is free of errors. Moreover, the simulation of geotechnical problems by means of the finite element method implicitly involves some inevitable numerical and modeling errors. The accuracy at which reality is approximated depends highly on the expertise of the user regarding the modeling of the problem, the understanding of the soil models and their limitations, the selection of model parameters, and the ability to judge the reliability of the computational results. Hence, PLAXIS may only be used by professionals that possess the aforementioned expertise. The user must be aware of his/her responsibility when he/she uses the computational results for geotechnical design purposes. \cite{noauthor_plaxiscom_2020}
+PLAXIS\index{PLAXIS} is a finite element program for geotechnical applications in which soil models are used to simulate the soil behavior. The PLAXIS code and its soil models have been developed with great care. Although a lot of testing and validation have been performed, it cannot be guaranteed that the PLAXIS code is free of errors. Moreover, the simulation of geotechnical problems by means of the finite element method implicitly involves some inevitable numerical and modeling errors. The accuracy at which reality is approximated depends highly on the expertise of the user regarding the modeling of the problem, the understanding of the soil models and their limitations, the selection of model parameters, and the ability to judge the reliability of the computational results. Hence, PLAXIS may only be used by professionals that possess the aforementioned expertise. The user must be aware of his/her responsibility when he/she uses the computational results for geotechnical design purposes.
 
 \subsection{Geographic information system}
 Geographical Information System (GIS) is a computer based information system used to digital represent and analyze the geographical features, present on the Earth’s surface and events that taking place on it. The meaning of GIS is to represent digitally is to convert analogue (smooth line) into digital form.
@@ -346,9 +378,9 @@ Map is a small scale representation of Earth’s surface. Representation of eart
 Every Spatial features needs to be referenced GIS use. Spatial reference systems provide a framework to define positions on the Earth’s surface. We are used to working with coordinate systems, but due to Earth’s irregular system, this method becomes intricate. Here we represent spherical or ellipsoidal surface of earth in flat plane. For that we use projection of earth on a cylindrical surface. This can be done in many methods, we use MUTM (Modified Universal Traverse Mercator) which divides Earth into 120 parts of 3 degree each for using projections, which is slightly better than UTM projection for calculations in Nepal. We use MUTM coordinate system with 84 degree datum.
 
 \subsubsection{ArcGIS}
-ArcGIS\index{ArcGIS} is a platform for organizations to create, manage, share, and analyze spatial data\index{spartial data}. It consists of server components, mobile and desktop applications, and developer tools. This platform can be deployed on-premises or in the cloud (Amazon, Azure) with ArcGIS Enterprise, or used via ArcGIS Online which is hosted and managed by Esri.\cite{noauthor_arcgiscom_nodate}
+ArcGIS\index{ArcGIS} is a platform for organizations to create, manage, share, and analyze spatial data\index{spartial data}. It consists of server components, mobile and desktop applications, and developer tools. This platform can be deployed on-premises or in the cloud (Amazon, Azure) with ArcGIS Enterprise, or used via ArcGIS Online which is hosted and managed by Esri.
 %--------------------------------------------------------------------------------------------------------------------------------------------------------------
-\section{Liquifaction}
+\section{liquefaction}
 \subsection{Introduction}
 Liquefaction is one of the major causes of heavy destruction during a seismic event. It occurs in the deposit of loose and saturated sand with certain range of percentage of fines \cite{r11}. The occurrence of liquefaction is distributed around the epicentre and is generally observed near river, lakes owing to the favourable soil properties and the ground water level there.  Loose sand tends to contract during the earthquakes which causes the pore water pressure in the voids to rise, and with the proper drainage not available either due to the deposit being a large one or due to the lower values of permeability of the deposit, which causes the pore water pressure to further rise up to the effective stress, resulting in a temporary loss of shear strength, imparting the liquid like behaviour to the deposit. The liquid like behaviour of the sand deposit introduces large deformations in the structures resting on the ground above the deposit. Lateral spread, sand boiling and surface cracks are the prominent effects observed during a liquefaction event.
 
@@ -479,11 +511,11 @@ Dipendra et. Al(2015)\cite{r30} computed FS for various localities of Kathmandu 
 
 Bastola and Acharya(2016)\cite{r31} prepared another using quantitative methods of  liquefaction susceptibility map preparation. Liquefaction Potential Index(LPI) was calculated for various borehole data and the area most prone to liquefaction was highlighted in the map. 
 
-\subsection{Methods for liquifaction calculation}
-There are qualitative and quantitative methods and deterministic and probabilistic approaches to assess the liquefaction potential. In this research, the stress-based approach suggested by Idriss and Boulanger (2008) has been adopted to perform an analysis of the factor of safety (FS) with respect to liquefaction on each layer and Iwasaki et al. (1982) method has been used to estimate the liquefaction potential index(LPI) of the sites.
-The stress-based approach for evaluating the potential 1-or liquefaction triggering, initiated by Seed and Idriss (1967), has been used widely for the last 45 years (e.g., Seed and Idriss 1971, Shibata 1981, Tokimatsu and Yoshimi 1983, NRC 1985, Seed et al. 1985, Youd et al. 2001, Cetin et al. 2004, Idriss and Boulanger 2004). The basic framework, as adopted by numerous researchers, compares the earthquake-induced cyclic stress ratios (CSR) with the cyclic resistance ratios (CRR) of the soil. This method uses the Standard Penetration Test (SPT) blow count data and geotechnical properties of the soil layers to predict the earthquake potential.
+\subsection{Methods for liquefaction calculation}
+There are qualitative and quantitative methods and deterministic and probabilistic approaches to assess the liquefaction potential. In this research, the stress-based approach suggested by Idriss and Boulanger\cite{idris_and_bolinger} has been adopted to perform an analysis of the factor of safety (FS) with respect to liquefaction on each layer and Iwasaki et al. \cite{r26} method has been used to estimate the liquefaction potential index(LPI) of the sites.
+The stress-based approach for evaluating the potential 1-or liquefaction triggering, initiated by Seed and Idriss \cite{idris_seed}, has been used widely for the last 45 years. The basic framework, as adopted by numerous researchers, compares the earthquake-induced cyclic stress ratios (CSR) with the cyclic resistance ratios (CRR) of the soil. This method uses the Standard Penetration Test (SPT) blow count data and geotechnical properties of the soil layers to predict the earthquake potential.
 \subsection{Stress based approach}
-Stress based approach suggested by Idriss and Boulanger (2008) to find Factor of Safety. In this method, the stress (loading) that results in liquefaction is defined as the cyclic stress ratio (CSR), and the property of the soils to resist liquefaction is termed as the cyclic resistance ratio (CRR). The FS with respect to liquefaction can be calculated using:
+Stress based approach suggested by Idriss and Boulanger \cite{idris_and_bolinger} to find Factor of Safety. In this method, the stress (loading) that results in liquefaction is defined as the cyclic stress ratio (CSR), and the property of the soils to resist liquefaction is termed as the cyclic resistance ratio (CRR). The FS with respect to liquefaction can be calculated using:
 \begin{equation}
 FS = \frac{CRR}{CSR}
 \end{equation}
@@ -492,7 +524,7 @@ Here, $CRR = CRR_{7.5}*M.S.F*K_\alpha $
 
 Where, $CRR_{7.5}$ is the cyclic resistance ratio calibrated for the earthquake of magnitude 7.5; MSF is the magnitude scaling factor that accounts for the effects of shaking duration and $K_\alpha$ is a factor for the presence of sustained static shear stresses, which may exist beneath foundations or within slopes.
 
-MSF and $K_\sigma$ were calculated using  (Idriss and Boulanger 2008): 
+MSF and $K_\sigma$ were calculated using \cite{idris_and_bolinger}: 
 \begin{equation}
 MSF = 6.9 e^{- \frac{M_w}{4}} - 0.058 \leq 1.8
 \end{equation}
@@ -515,7 +547,7 @@ C_\sigma = \frac{1}{18.9-2.55\sqrt{({N_1})_{60cs}}} \leq 0.3
 
 $({N_1})_{60cs}$ is the corrected SPT value.
 
-The $CRR_{7.5}$ is calculated using Idriss and Boulanger 2008
+The $CRR_{7.5}$ is calculated using \cite{idris_and_bolinger}
 \begin{equation}
 CRR_{7.5} = exp(\frac{({N_1})_{60cs}}{14.1} + (\frac{({N_1})_{60cs}}{126})^2 + (\frac{({N_1})_{60cs}}{23.6})^3 + (\frac{({N_1})_{60cs}}{25.4})^4) - 2.8
 \end{equation}

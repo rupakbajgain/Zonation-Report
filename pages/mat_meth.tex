@@ -1,5 +1,7 @@
 \chapter{Material And Methods}
 Methodology is the systematic, theoretical analysis of the methods applied to a field of study. It comprises the theoretical analysis of the body of methods and principles associated with a branch of knowledge.
+
+\section{Working Steps}
 \begin{SCfigure}[][hbt]
 %flowchart here	
   \begin{tikzpicture}[node distance=2cm]
@@ -20,14 +22,13 @@ Methodology is the systematic, theoretical analysis of the methods applied to a 
 \caption{Project Flowchart}
 \end{SCfigure}
 
-\section{Selection of Project}
+\subsection{Selection of Project}
 As a matter of interest, we choose geotechnical field for our final year project. We discussed with our supervisor and attempted to try the Bearing Capacity Zonation and Liquefaction Potential Index Mapping. This project enables any future uses to find tentative bearing capacity and LPI of Kathmandu valley.
 
-\section{Data Collection}
+\subsection{Data Collection}
 Data required for our project was SPT value and summary sheet for different locations as SPT was commonly used for bearing capacity calculation as well as LPI analysis of any place. Our data was provided by our supervisor as well as from Multilab. We collected about 104 boreholes from about 31 locations.
 
-
-\section{Literature Review}
+\subsection{Literature Review}
 Detailed information about the project was needed, for that we studied various books as well as journals related to shallow foundation bearing capacity. As well as bearing capacity calculations from shear as well as deflection methods. For liquefaction we read various papers by Seed, Idris and research on Nepal earthquake 2015, etc.
 
 \begin{wrapfigure}{r}{0.25\textwidth}
@@ -36,19 +37,19 @@ Detailed information about the project was needed, for that we studied various b
 \caption{Footing Dimension}
 \label{fsec}
 \end{wrapfigure}
-\section{Foundation Selection}
+\subsection{Foundation Selection}
 In this project work, square footing has been used. Buildings in Kathmandu valley have a depth of nearly 2m. Thus bearing capacity has been calculated for depths 1.5m, 3m and 4.5m for a footing dimension 2m * 2m as in Figure ~\ref{fsec}. Ground water table has been used as given in the bore logs. Also, the permissible settlement of 25mm is taken for settlement criteria approach.
 
-\section{Calculation of bearing capacity from theoretical approaches}
+\subsection{Calculation of bearing capacity from theoretical approaches}
 The various parameters of soil like cohesion, internal angle of friction, young’s modulus of elasticity, unit weight, poisons ratio, etc were interpreted from SPT N value through various literatures available. Methods like Terzaghi, Meyerhof, Hansen, Vesic and Teng are used for the calculation of bearing capacity under shear criteria. And, Bowels, Teng, Peck and Meyerhof methods were used for settlement criteria.
 
-\section{Use PLAXIS 2D for Numerical Modeling}
+\subsection{Use PLAXIS 2D for Numerical Modeling}
 In this project a numerical model is developed using PLAXIS. Finite element analysis is carried out using Mohr coulomb failure criteria to represent two-dimensional soil models. Foundation is modelled as square footing and load increment is applied till the soil model fails. Ultimate bearing capacity is identified as that minimum pressure on footing at which the foundation soil experiences shear failure. And for deflection criteria, reaction at 25mm deflection is noted which is ultimate bearing capacity. In plaxis effective stress is considered as an ultimate bearing capacity.
 
-\section{Calculation of liquefaction potential index}
+\subsection{Calculation of liquefaction potential index}
 For calculating liquefaction index, stress based approach was used and factor of safety was calculated using ratio of cyclic resistance ratio to cyclic stress ratio and from that LPI was calculated using data for up to 20m or for up to given data.
 
-\section{Mapping of BC and LPI using QGIS}
+\subsection{Mapping of BC and LPI using QGIS}
 We used QGIS for mapping. Map of Nepal was taken and we put our location on map. After using map of only two districts i.e. Kathmandu and Lalitpur (as our data lies on those districts). The value of all points are interpolated and clipped by our district maps. Suitable colour and map elements are selected accordingly.
 
 IDW interpolation method was used in this software. The least value of the location was plotted. Consequently, the study area was categorized into following zones:
