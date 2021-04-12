@@ -1,46 +1,26 @@
 \chapter{Literature Review}
 \section{Bearing Capacity}
-Foundation\index{Foundataion} is a part of a structure which is meant to transfer load from the superstructure to the ground taking care of shear failure and settlement. The design and the construction of a well-performing foundation must possess some basic requirements: 
-\begin{itemize}
-	\item 	The design and the construction of the foundation are done such that it can sustain as well as transmit the dead and the imposed loads to the soil. This transfer has to be carried out without resulting in any form of settlement that can result in any form of stability issues for the structure.
-	\item Differential settlements can be avoided by having a rigid base for the foundation. These issues are more pronounced in areas where the superimposed loads are not uniform in nature.
-	\item Based on the soil and area it is recommended to have a deeper foundation so that it can guard any form of damage or distress. These are mainly caused due to the problem of shrinkage and swelling because of temperature changes.
-	\item The location of the foundation chosen must be an area that is not affected or influenced by future works or factors.
-\end{itemize}
+Foundation\index{Foundataion} is a part of a structure which is meant to transfer load from the superstructure to the ground taking care of shear failure and settlement. In this project we are going to calculate the bearing capacity of soil for the shallow foundation, so only design of shallow foundation is further discussed. Foundations are designed to have an adequate load capacity depending on the type of subsoil/rock supporting the foundation by a geotechnical engineer, and the footing itself may be designed structurally by a structural engineer. The primary design concerns are settlement and bearing capacity. When considering settlement, total settlement and differential settlement is normally considered. Differential settlement is when one part of a foundation settles more than another part. This can cause problems to the structure which the foundation is supporting. Expansive clay soils can also cause problems.
 
-The two types of foundation are:-
-\begin{itemize}
-  \item Shallow Foundation\index{Foundation!Shallow}
-  \par
-  Shallow foundations, often called footings, are usually embedded about a metre or so into soil. One common type is the spread footing which consists of strips or pads of concrete (or other materials) which extend below the frost line and transfer the weight from walls and columns to the soil or bedrock.
-  \item Deep Foundation
-  \par
-  A deep foundation is used to transfer the load of a structure down through the upper weak layer of topsoil to the stronger layer of subsoil below.
-\end{itemize}
+Looking down the pages of the history books, the first ever theory on determination of bearing capacity was given by Rankine\index{Rankine} (1885). He considered the soil mass to be in plastic equilibrium\index{plastic equilibrium} and derived principle stresses\index{principle stress} values for different soil particles to complete his theory. This work was superseded by Prandtl\index{Pradtl} (1920) who considered punching shear failure\index{shear failure!punching} of soil masses to arrive to his formula for determining ultimate bearing capacity. After Prandtl, Hogentogler and Terzaghi\index{Terzaghi} derived another formula for ultimate bearing capacity approximating the actual curved failure surface which had been approximated as logarithmic spiral in theory given by Prandtl\index{Prandtl}.\cite{arora_soil_2004}
+\par
+Later in 1943, Terzaghi gave a general theory for the bearing capacity under a strip footing making a lot of assumptions like the footing was long enough, shear strength was governed by Mohr-Columb equation\index{mohr columb@Mohr-Columb}, and he also ignored the shear strength of the soil mass that was above the base of the footing.\cite{arora_soil_2004}
+\par
+Up until now this theory has been revised a lot of times by many famous scientists, so that it can be worked out in various different cases. Meyerhof\index{Meyerhof} (1951), Vesic\index{Vesic} (1973), Skempton\index{Skempton} (1951), Hansen\index{Hansen} (1962), Teng\index{Teng} (1962) etc. have arrived at formulae specific to cases.\cite{arora_soil_2004}
+\par
 
-The choice of the appropriate type of foundation is governed by some important factors such as
+The cases considered in this report assume that the foundation is subjected to centric vertical loading. For the determination of the ultimate bearing capacity of a horizontal footing with a vertical load, the following factors are included: \cite{dunn_fundamentals_1980}
 \begin{itemize}
-	\item The nature of the structure.
-	\item The load exerted by the structure.
-	\item The subsoil characteristics.
-	\item The allotted cost of foundations.
+\item The unit weight, shear strength, and deformation characteristics of soil.
+\item The size, shape, depth, and roughness of the footing and
+\item The water table conditions and initial stresses in the foundation soil.
 \end{itemize}
-
-In this project we are going to calculate the bearing capacity of soil for the shallow foundation, so only design of shallow foundation is further discussed. Foundations are designed to have an adequate load capacity depending on the type of subsoil/rock supporting the foundation by a geotechnical engineer, and the footing itself may be designed structurally by a structural engineer. The primary design concerns are settlement and bearing capacity. When considering settlement, total settlement and differential settlement is normally considered. Differential settlement is when one part of a foundation settles more than another part. This can cause problems to the structure which the foundation is supporting. Expansive clay soils can also cause problems.
 
 In designing shallow foundations, two possible failure mechanisms\index{failure mechanisms} must be considered. \cite{dunn_fundamentals_1980}
 \begin{itemize}
   \item A shear failure\index{shear failure|see{failure mechanisms}} in the soil
   \item Excessive settlement leading to differential settlement\index{diffrential settlement|see{failure mechanisms}} in excess of that tolerable for the supported structures.
 \end{itemize}
-
-\subsection{Three modes of shear failure}
-\subsubsection{General Shear Failure}
-A continuous failure surface is developed between the edges of the footing which extends up to the ground. As the applied pressure through the footing increases to the range of ultimate bearing capacity, plastic conditions develop around the edge of the footing that spread downward and then outward to the ground surface. Equilibrium is developed along that failure surface. Heave is seen on both sides of the footing. This mode of failure prevails in very dense soil.
-\subsubsection{Local shear failure}
-This mode of failure prevails in highly compressible soil and the failure mode is characterized by occurrence of relatively large settlement. Partial development of the state of plastic equilibrium occurs and the failure surface does not extend to the ground surface. Slight heave formation occurs on the surface.
-\subsubsection{Punching Shear Failure}
-It occurs when there is relatively high compression of soil under footing accompanied by shearing in the vertical direction around the edges of the footing. Failure is not accompanied by any heaving or any tilting. This mode of failure prevails in a soil of low compressibility and where the foundation is located at a significant depth.
 
 Bearing capacity is the capacity of soil to support the loads applied to the ground. The bearing capacity of soil is the maximum average contact pressure between the foundation and the soil which should not produce shear failure in the soil. Ultimate bearing capacity is the theoretical maximum pressure which can be supported without failure; allowable bearing capacity is the ultimate bearing capacity divided by a factor of safety. Sometimes, on soft soil sites, large settlements may occur under loaded foundations without actual shear failure occurring; in such cases, the allowable bearing capacity is based on the maximum allowable settlement. Some terms used in bearing capacity are:
 \begin{itemize}
@@ -54,7 +34,7 @@ where, $q_u$ = ultimate bearing capacity (gross), $q$ = surcharge
 
 \item \textbf{Net Safe Bearing Capacity($q_{ns}$):} It is net pressure that can be applied to soil considering only shear failure. It can be obtained by
 \begin{equation}
-q_{ns} = q_u / FOS 
+q_{ns} = \frac{q_u}{FOS}
 \end{equation}
 where, FOS = factor of safety, which is usually taken as 3.0
 
@@ -68,13 +48,51 @@ q_s = q_{ns} + q
 \item \textbf{Net Allowable Bearing Pressure($q_{n\rho}$):} It is net bearing bearing pressure which can be used for the design of foundation. As there should be no shearing failure and settlement should also be within the limits, this is smaller of the $q_{ns}$ and $q_{n\rho}$. It is given as
 \begin{equation}
 q_{na} = \begin{cases}
-    q_{ns}, & \text{if} q_{n\rho} > q_{ns}\\
-	q_{n\rho}, & \text{if} q_{ns} > q_{n\rho}
+    q_{ns}, & \text{if } q_{n\rho} > q_{ns}\\
+	q_{n\rho}, & \text{if } q_{ns} > q_{n\rho}
 	\end{cases}
 \end{equation}
-
 \end{itemize}
 
+\subsection{Requirement for design and construction of foundation}
+The design and the construction of a well-performing foundation must possess some basic requirements: 
+\begin{itemize}
+	\item 	The design and the construction of the foundation are done such that it can sustain as well as transmit the dead and the imposed loads to the soil. This transfer has to be carried out without resulting in any form of settlement that can result in any form of stability issues for the structure.
+	\item Differential settlements can be avoided by having a rigid base for the foundation. These issues are more pronounced in areas where the superimposed loads are not uniform in nature.
+	\item Based on the soil and area it is recommended to have a deeper foundation so that it can guard any form of damage or distress. These are mainly caused due to the problem of shrinkage and swelling because of temperature changes.
+	\item The location of the foundation chosen must be an area that is not affected or influenced by future works or factors.
+\end{itemize}
+
+\subsection{Types of foundation}
+The two types of foundation are:-
+\begin{itemize}
+  \item Shallow Foundation\index{Foundation!Shallow}
+  \par
+  Shallow foundations, often called footings, are usually embedded about a metre or so into soil. One common type is the spread footing which consists of strips or pads of concrete (or other materials) which extend below the frost line and transfer the weight from walls and columns to the soil or bedrock.
+  \item Deep Foundation
+  \par
+  A deep foundation is used to transfer the load of a structure down through the upper weak layer of topsoil to the stronger layer of subsoil below.
+\end{itemize}
+
+\subsection{Choice for type of foundation}
+The choice of the appropriate type of foundation is governed by some important factors such as
+\begin{itemize}
+	\item The nature of the structure.
+	\item The load exerted by the structure.
+	\item The subsoil characteristics.
+	\item The allotted cost of foundations.
+\end{itemize}
+
+\subsection{Three modes of shear failure}
+\subsubsection{General Shear Failure}
+A continuous failure surface is developed between the edges of the footing which extends up to the ground. As the applied pressure through the footing increases to the range of ultimate bearing capacity, plastic conditions develop around the edge of the footing that spread downward and then outward to the ground surface. Equilibrium is developed along that failure surface. Heave is seen on both sides of the footing. This mode of failure prevails in very dense soil.
+\subsubsection{Local shear failure}
+This mode of failure prevails in highly compressible soil and the failure mode is characterized by occurrence of relatively large settlement. Partial development of the state of plastic equilibrium occurs and the failure surface does not extend to the ground surface. Slight heave formation occurs on the surface.
+\subsubsection{Punching Shear Failure}
+It occurs when there is relatively high compression of soil under footing accompanied by shearing in the vertical direction around the edges of the footing. Failure is not accompanied by any heaving or any tilting. This mode of failure prevails in a soil of low compressibility and where the foundation is located at a significant depth.
+
+
+\subsection{Factors affecting FOS}
 Important Features Affecting Factor of Safety
 \begin{itemize}
 \item	Type of structure permanent or temporary.
@@ -103,34 +121,27 @@ It is recommended that the factor of safety should be between 2 and 4. These val
 \end{tabularx}
 \end{table}
 
-Factors affecting the Bearing Capacity of the soil are:
+\subsection{Factors affecting Bearing Capacity of Soil}
+Factors affecting the Bearing Capacity of the soil are:\\
+\begin{minipage}[t]{0.4\linewidth}
 \begin{itemize}
 \item	Type of soil.
 \item	Unit weight of soil.
 \item	Surcharge load.
 \item	Depth of foundation.
 \item	Mode of failure.
+\end{itemize}
+\end{minipage}\ignorespaces%\hspace{1.5cm}
+\begin{minipage}[t]{0.5\linewidth}
+\begin{itemize}
 \item	Shape and size of footing.
 \item	Depth of water table.
 \item	Eccentricity in footing load.
 \item	Inclination of ground.
 \item	Inclination of base of foundation.
 \end{itemize}
+\end{minipage}\\
 
-\par
-The cases considered in this report assume that the foundation is subjected to centric vertical loading. For the determination of the ultimate bearing capacity of a horizontal footing with a vertical load, the following factors are included: \cite{dunn_fundamentals_1980}
-\begin{itemize}
-\item The unit weight, shear strength, and deformation characteristics of soil.
-\item The size, shape, depth, and roughness of the footing and
-\item The water table conditions and initial stresses in the foundation soil.
-\end{itemize}
-
-Looking down the pages of the history books, the first ever theory on determination of bearing capacity was given by Rankine\index{Rankine} (1885). He considered the soil mass to be in plastic equilibrium\index{plastic equilibrium} and derived principle stresses\index{principle stress} values for different soil particles to complete his theory. This work was superseded by Prandtl\index{Pradtl} (1920) who considered punching shear failure\index{shear failure!punching} of soil masses to arrive to his formula for determining ultimate bearing capacity. After Prandtl, Hogentogler and Terzaghi\index{Terzaghi} derived another formula for ultimate bearing capacity approximating the actual curved failure surface which had been approximated as logarithmic spiral in theory given by Prandtl\index{Prandtl}.\cite{arora_soil_2004}
-\par
-Later in 1943, Terzaghi gave a general theory for the bearing capacity under a strip footing making a lot of assumptions like the footing was long enough, shear strength was governed by Mohr-Columb equation\index{mohr columb@Mohr-Columb}, and he also ignored the shear strength of the soil mass that was above the base of the footing.\cite{arora_soil_2004}
-\par
-Up until now this theory has been revised a lot of times by many famous scientists, so that it can be worked out in various different cases. Meyerhof\index{Meyerhof} (1951), Vesic\index{Vesic} (1973), Skempton\index{Skempton} (1951), Hansen\index{Hansen} (1962), Teng\index{Teng} (1962) etc. have arrived at formulae specific to cases.\cite{arora_soil_2004}
-\par
 \subsection{Site Investigation Requirements}
 Site exploration\index{site exploration} shall be carried out by digging test pits, two as a minimum, and more if the subsurface soil condition shows a significant variation in soil type. Generally, the minimum depth of exploration for a building covered by this MRT shall be 2 m. In hilly areas, exploration up to the depth of sound bed-rock, if it lies shallower than 2 m, should suffice. No exploration shall be required if the site is located on rock or on fluvial terraces (Tar) with boulder beds. The soil encountered in the test pits should be classified as per Table ~\ref{foundation-soil-classification}.
 \begin{table}
@@ -146,9 +157,9 @@ Site exploration\index{site exploration} shall be carried out by digging test pi
   \end{tabular}
 \end{table} 
 \subsection{Standard Penetration Test}
-The SPT\index{SPT} is an in-situ dynamic penetration test designed to provide information of the geotechnical engineering properties of soils. The test is conducted in a bore hole\index{bore hole} by means of a standard split spoon sampler. Once the drilling is done to the desired depth, the drilling tool is removed and the sampler is placed inside the bore hole. By means of a drop hammer\index{drop hammer} of 63.5kg mass falling through a height of 750mm at the rate of 30 blows per minute, the sampler is driven into the soil. This is as per IS -2131:1963.The number of blows of hammer required to drive a depth of 150mm is counted. Further it is driven by 150 mm and the blows are counted. Similarly, the sampler\index{sampler} is once again further driven by 150mm and the number of blows recorded. The number of blows recorded for the first 150mm not taken into consideration. The number of blows recorded for last two 150mm intervals are added to give the standard penetration number\index{SPT!N} (N). In other words = No: of blows required for 150mm penetration beyond seating drive of 150mm. If the number of blows for 150mm drive exceeds 50, it is taken as refusal and the test is discontinued. The standard penetration number is corrected for dilatancy correction\index{correction!dilatancy} and overburden correction\index{correction!overburden}. There are many parameters of soils which can be correlated with SPT N-value, such as density, undrained shear strength, friction angle, modulus, etc. SPT N-value is accepted as an important indicator and is most widely used to describe soil characteristics\index{soil characterstics}.\cite{mahoto_bearing_2012}
+The SPT\index{SPT} is an in-situ dynamic penetration test designed to provide information of the geotechnical engineering properties of soils. The test is conducted in a bore hole\index{bore hole} by means of a standard split spoon sampler. Once the drilling is done to the desired depth, the drilling tool is removed and the sampler is placed inside the bore hole. By means of a drop hammer\index{drop hammer} of 63.5kg mass falling through a height of 750mm at the rate of 30 blows per minute, the sampler is driven into the soil. This is as per IS -2131:1963.The number of blows of hammer required to drive a depth of 150mm is counted. Further it is driven by 150 mm and the blows are counted. Similarly, the sampler\index{sampler} is once again further driven by 150mm and the number of blows recorded. The number of blows recorded for the first 150mm not taken into consideration. The number of blows recorded for last two 150mm intervals are added to give the standard penetration number\index{SPT!N} (N) in other words no of blows required for 150mm penetration beyond seating drive of 150mm. If the number of blows for 150mm drive exceeds 50, it is taken as refusal and the test is discontinued. The standard penetration number is corrected for dilatancy correction\index{correction!dilatancy} and overburden correction\index{correction!overburden}. There are many parameters of soils which can be correlated with SPT N-value, such as density, undrained shear strength, friction angle, modulus, etc. SPT N-value is accepted as an important indicator and is most widely used to describe soil characteristics\index{soil characterstics}.\cite{mahoto_bearing_2012}
 \subsubsection{Problems with SPT}
-The Standard Penetration Test recovers a highly disturbed sample, which is generally not suitable for tests which measure properties of the in-situ soil structure, such as density, strength, and consolidation characteristics. However, this results in blow counts which are not easily converted to SPT N-values — many conversions have been proposed, some of which depend on the type of soil sampled, making reliance on blow counts with non-standard samplers problematic.
+The Standard Penetration Test recovers a highly disturbed sample, which is generally not suitable for tests which measure properties of the in-situ soil structure, such as density, strength, and consolidation characteristics. However, this results in blow counts which are not easily converted to SPT N-values.  Many conversions have been proposed, some of which depend on the type of soil sampled, making reliance on blow counts with non-standard samplers problematic.
 \par
 Standard Penetration Test blow counts do not represent a simple physical property of the soil, and thus must be correlated to soil properties of interest, such as strength or density.
 \subsubsection{SPT Correction for field procedure}
@@ -189,7 +200,7 @@ N_{60} = N_{60cs} * C_\sigma
 \end{gather}
 
 \subsection{Some Empirical Relationships} \label{emp-form}
-Peak\index{Peak}, Hansen\index{Hansen} \& Thompson\index{Thompson} (1974)
+Peak\index{Peak}, Hansen\index{Hansen} \& Thompson\index{Thompson} (1974)\cite{kulhawy_manual_1990}
 \begin{gather}
 {\phi}_{deg}=27.1+0.3*N_{60}-0.00054*N_{60}^2 \label{phi-form}\\
 {\gamma}_{sat}(kN/m^3)= \begin{cases}
@@ -200,8 +211,8 @@ Peak\index{Peak}, Hansen\index{Hansen} \& Thompson\index{Thompson} (1974)
 \end{gather}
 where, $P_a$ = 100 $kN/m^2$
 
-\subsection{Value ranges for various soil parameters}
-Table ~\ref{cbsf-table} show relation of SPT-N\index{SPT!N} to other parameters.
+\subsection{Relation to packing ratio}
+Table ~\ref{cbsf-table} show relation of SPT-N\index{SPT!N} to packing ratio.
 
 \begin{table}
   \centering
@@ -225,6 +236,7 @@ Table ~\ref{cbsf-table} show relation of SPT-N\index{SPT!N} to other parameters.
 \end{table}
 
 \subsection{Terzaghi’s Bearing Capacity Theory}
+Based on Terzaghi’s bearing capacity theory, column load P is resisted by shear stresses at edges of three zones under the footing and the overburden pressure, q ($=\gamma D$) above the footing.  The first term in the equation is related to cohesion of the soil. The second term is related to the depth of the footing and overburden pressure. The third term is related to the width of the footing and the length of shear stress area. The bearing capacity factors, Nc, Nq, Ng, are function of internal friction angle, $\phi$.
 The general bearing capacity derived by Terzaghi\index{Terzaghi} for square footing are
 \begin{gather}
 Q_u = 1.3 * C * N_c + q_0 * N_q * R_{W1} + 0.4 * {\gamma} * B * N_{\gamma} * R_{W2} \\
@@ -232,8 +244,8 @@ N_c = \cot \phi (N_q - 1)\\
 N_q = \exp ^ 2 (\frac{3\phi}{4} - \frac{\phi}{2}) \frac{\tan \phi}{2 \cos ^2 (45 + \frac{\phi}{2})}\\
 N_{\gamma} = \frac{\tan \phi (\frac{K_p}{\cos ^2 \phi} - 1)}{2}\\
 K_p= \tan ^ 2 (45 + \frac{\phi}{2})\\
-R_{W1} = 0.5 (1 +\frac{D_{W1}}{D_f}), if (\frac{D_{W1}}{D_f})\le 1 \\
-R_{W2} = 0.5 (1 +\frac{D_{W2}}{B}), if (\frac{D_{W2}}{B})\le 1
+R_{W1} = 0.5 (1 +\frac{D_{W1}}{D_f}) \text{, if } (\frac{D_{W1}}{D_f})\le 1 \\
+R_{W2} = 0.5 (1 +\frac{D_{W2}}{B})\text{, if } (\frac{D_{W2}}{B})\le 1
 \end{gather}
 
 Assumptions in Terzaghi’s Bearing Capacity Theory.
@@ -248,9 +260,9 @@ Assumptions in Terzaghi’s Bearing Capacity Theory.
 \end{enumerate}
 
 \subsection{Meyerhof’s Bearing Capacity Theory}
-In 1951, Meyerhof\index{Meyerhof} published a bearing capacity theory which could be applied to rough shallow and deep foundations. Meyerhof (1951, 1963) proposed a bearing-capacity equation similar to that of Terzaghi but included a shape factor $S_q$ with the depth term $N_q$. He also included depth factors and inclination factors.
+In 1951, Meyerhof\index{Meyerhof} published a bearing capacity theory which could be applied to rough shallow and deep foundations. Meyerhof (1951, 1963) proposed a bearing-capacity equation similar to that of Terzaghi but included a shape factor $S_q$ with the depth term $N_q$. He also included depth factors and inclination factors.\cite{mey_book}
 \par
-The failure surface at ultimate load under a continuous foundation as assumed by Meyerhof (1951) is shown in Figure ~\ref{meyerhof-analysis}. In this figure, abc is the elastic triangular wedge shown in Figure ~\ref{meyerhof-analysis}, bcd is the radial shear zone with cd being an arc of a log spiral, and bdef is a mixed shear zone in which the shear varies between the limits of radial and plane shear depending on the depth and roughness of the foundation. The plane be is referred to as an equivalent free surface. The normal and shear stresses on the plane be are p o and s o, respectively. The superposition method is used to determine the contribution of cohesion (c), on the ultimate bearing capacity $Q_u$ of the continuous foundation and can be expressed as
+The failure surface at ultimate load under a continuous foundation as assumed by Meyerhof (1951) is shown in Figure ~\ref{meyerhof-analysis}. In this figure, abc is the elastic triangular wedge shown in Figure ~\ref{meyerhof-analysis}, bcd is the radial shear zone with cd being an arc of a log spiral, and bdef is a mixed shear zone in which the shear varies between the limits of radial and plane shear depending on the depth and roughness of the foundation. The plane be is referred to as an equivalent free surface. The normal and shear stresses on the plane be are $P_o$ and $s_o$, respectively. The superposition method is used to determine the contribution of cohesion (c), on the ultimate bearing capacity $Q_u$ of the continuous foundation and can be expressed as
 \begin{gather}
 Q_u = C * N_c * S_c * d_c + q_0 * N_q * S_q * d_q + 0.5 * {\gamma} * B * N_{\gamma}*S_{\gamma}*d_{\gamma}\\
 N_c = \exp^{\pi * \tan(\phi)} * \tan^2 ( 45 + \frac{\phi}{2} )\\
@@ -265,7 +277,7 @@ K_p= \tan ^ 2 (45 + \frac{\phi}{2})
 \end{gather}
 \begin{figure}
 \centering
-\caption{Meyerhof’s Analysis}
+\caption{Meyerhof’s Analysis\cite{mey_book}}
 \includegraphics{images/main/meyerhof-analysis.png}
 \label{meyerhof-analysis}
 \end{figure}
@@ -321,7 +333,7 @@ q_nu = 0.11 N^2 B {W_\gamma} + 0.33 (100+N^2)D_f*{W_\gamma}
 \end{equation}
 
 \subsection{Peck method}
-Terzaghi and Peck (1967) gave charts for the safe bearing pressures introducing a total settlement of 25 mm and a differential settlement of 19 mm for different footings. Peck et al (1974) revised the Terzaghi and Peck curves to consider in later research, and gave following equations for the safe settlement pressure.
+Terzaghi and Peck (1967) gave charts for the safe bearing pressures introducing a total settlement of 25 mm and a differential settlement of 19 mm for different footings. Peck et al (1974) revised the Terzaghi and Peck curves to consider in later research, and gave following equations for the safe settlement pressure.\cite{arora_soil_2004}
 \begin{equation}
 q_{n\rho} = 0.41 C_w Ns
 \end{equation}
@@ -360,7 +372,7 @@ $q_a$  = allowable bearing capacity for settlement of 25mm, unit is kPa.,\\
 $N$ = For $E_r$ 55\\
 $F_1$ = 0.05, $F_2$ = 0.08, $F_3$ = 0.3 ,and $F_4$ = 1.2, for SI units.
 
-\subsection{Finite element method}
+\subsection{Finite Element Method}
 The finite element method\index{FEM} (FEM) is the most widely used method for solving problems of engineering and mathematical models. Typical problem areas of interest include the traditional fields of structural analysis, heat transfer, fluid flow, mass transport, and electromagnetic potential. The FEM is a particular numerical method for solving partial differential equations in two or three space variables (i.e., some boundary value problems). To solve a problem, the FEM subdivides a large system into smaller, simpler parts that are called finite elements. This is achieved by a particular space discretisation in the space dimensions, which is implemented by the construction of a mesh of the object: the numerical domain for the solution, which has a finite number of points. 
 \subsubsection{PLAXIS}
 PLAXIS\index{PLAXIS} is a finite element program for geotechnical applications in which soil models are used to simulate the soil behavior. The PLAXIS code and its soil models have been developed with great care. Although a lot of testing and validation have been performed, it cannot be guaranteed that the PLAXIS code is free of errors. Moreover, the simulation of geotechnical problems by means of the finite element method implicitly involves some inevitable numerical and modeling errors. The accuracy at which reality is approximated depends highly on the expertise of the user regarding the modeling of the problem, the understanding of the soil models and their limitations, the selection of model parameters, and the ability to judge the reliability of the computational results. Hence, PLAXIS may only be used by professionals that possess the aforementioned expertise. The user must be aware of his/her responsibility when he/she uses the computational results for geotechnical design purposes.
@@ -377,16 +389,24 @@ Map is a small scale representation of Earth’s surface. Representation of eart
 
 Every Spatial features needs to be referenced GIS use. Spatial reference systems provide a framework to define positions on the Earth’s surface. We are used to working with coordinate systems, but due to Earth’s irregular system, this method becomes intricate. Here we represent spherical or ellipsoidal surface of earth in flat plane. For that we use projection of earth on a cylindrical surface. This can be done in many methods, we use MUTM (Modified Universal Traverse Mercator) which divides Earth into 120 parts of 3 degree each for using projections, which is slightly better than UTM projection for calculations in Nepal. We use MUTM coordinate system with 84 degree datum.
 
-\subsubsection{ArcGIS}
-ArcGIS\index{ArcGIS} is a platform for organizations to create, manage, share, and analyze spatial data\index{spartial data}. It consists of server components, mobile and desktop applications, and developer tools. This platform can be deployed on-premises or in the cloud (Amazon, Azure) with ArcGIS Enterprise, or used via ArcGIS Online which is hosted and managed by Esri.
+\subsubsection{QGIS}
+QGIS is a free and open-source cross-platform desktop geographic information system (GIS) application that supports viewing, editing, and analysis of geospatial data. It allowing users to analyze and edit spatial information, in addition to composing and exporting graphical maps. It is a good alternative of ArcGIS which is free and has a large community. It is written in C++ available under the conditions of the GPL license. It is based on the C++ crossplattform library Qt from Trolltech. Therefore, it runs on most existing operating systems, including Linux, Unix, Mac OS X and Windows. 
+
+The main focus of QGIS is interactive two dimensional viewing of spatial data. However, there is also functionality for editing vector data and a GRASS plugin to use the analytical functionality of the GRASS program from within the QGIS GUI. QGIS supports a large number of vector and raster formats, including PostGIS, GRASS, Shapefile, GML, WFS, GPX, WMS, GeoTiff, PNG, JPG and many others. QGIS supports reprojecting on-the-fly for vector data.
 %--------------------------------------------------------------------------------------------------------------------------------------------------------------
-\section{liquefaction}
+\section{Liquefaction}
 \subsection{Introduction}
 Liquefaction is one of the major causes of heavy destruction during a seismic event. It occurs in the deposit of loose and saturated sand with certain range of percentage of fines \cite{r11}. The occurrence of liquefaction is distributed around the epicentre and is generally observed near river, lakes owing to the favourable soil properties and the ground water level there.  Loose sand tends to contract during the earthquakes which causes the pore water pressure in the voids to rise, and with the proper drainage not available either due to the deposit being a large one or due to the lower values of permeability of the deposit, which causes the pore water pressure to further rise up to the effective stress, resulting in a temporary loss of shear strength, imparting the liquid like behaviour to the deposit. The liquid like behaviour of the sand deposit introduces large deformations in the structures resting on the ground above the deposit. Lateral spread, sand boiling and surface cracks are the prominent effects observed during a liquefaction event.
 
 Most dramatic illustrations of the damages due to liquefaction to the civil-engineering structures were observed during the 1964 Niigata Earthquake and Alaska Earthquake occurring in the same year. The results of those liquefaction were dramatic bearing failures beneath the buildings, floating of the underground tanks and collapse and damages to several bridges nearer to the epicentre. These events for the first time drew attention of the engineering community towards the scientific study of the phenomenon. Since then, it has frequently been observed, recorded and studied during various major seismic events occurring around the globe. 
 
-The documentation and study of such events have been playing a vital role in prediction of occurrence of liquefaction at a certain place and broadly into the understanding of the phenomenon itself. Several techniques have been developed along the years, which can be broadly be grouped under : (1) methods that are based off the soil properties which are determined by laboratory testing, (2)methods that are based off the In- situ test results, (3)methods that are based off numerical modelling and (4) combination of laboratory testing and back analysis of any past records of occurrence of liquefaction.
+The documentation and study of such events have been playing a vital role in prediction of occurrence of liquefaction at a certain place and broadly into the understanding of the phenomenon itself. Several techniques have been developed along the years, which can be broadly be grouped under :
+\begin{enumerate}
+\item methods that are based off the soil properties which are determined by laboratory testing
+\item methods that are based off the In- situ test results
+\item methods that are based off numerical modelling
+\item combination of laboratory testing and back analysis of any past records of occurrence of liquefaction.
+\end{enumerate}
 
 In this report, liquefaction hazard mapping has been done by the 2nd method from site observed SPT values.
 
@@ -399,7 +419,7 @@ Intensity of the earthquake basically depends upon the magnitude of the earthqua
 Liquefaction generally occurs at the places nearer to the water bodies as the land nearby is ever saturated. Moreover, the young deposition of sand with no past history of exposure to the shaking due to the quake with uniform gradation in very loosely packed state makes the site much more vulnerable.
 \end{itemize}
 
-The dynamic strength of soil is affected strongly by the characteristics of soil grain such as grain size, grain shape, grain distribution and mineral composition. Seed \cite{r12} presented the relationship between the liquefaction resistance and the mean grain size (D50). The liquefaction resistance increases with increasing with the D50 of soil specimen. Ishibashi\cite{r14}  showed that for a given mean grain size (D50), soil specimen with well-graded grain distribution have lightly greater liquefaction resistance than that with uniform grain size distribution.
+The dynamic strength of soil is affected strongly by the characteristics of soil grain such as grain size, grain shape, grain distribution and mineral composition. Seed \cite{r12} presented the relationship between the liquefaction resistance and the mean grain size ($D_{50}$). The liquefaction resistance increases with increasing with the $D_{50}$ of soil specimen. Ishibashi\cite{r14}  showed that for a given mean grain size ($D_{50}$), soil specimen with well-graded grain distribution have lightly greater liquefaction resistance than that with uniform grain size distribution.
 
 Concerning the fine content in a soil, several studies show that the liquefaction resistance of the soil will first go on decreasing with increasing fine content, reach to a minimum value and then go on increasing afterwards. 
 
@@ -454,7 +474,7 @@ Kathmandu valley is geologically characterized by occurrence of fluvio-lacustrin
 
 \begin{figure}[!hbt]
 \centering
-\includegraphics[width=0.5\linewidth,keepaspectratio]{images/main/geological_cross_section.png}
+\includegraphics[width=0.75\linewidth,keepaspectratio]{images/main/geological_cross_section.png}
 \caption{A schematic cross-section showing the stratigraphic framework and depositional environments of the basin-fill sediments in the Kathmandu Valley (from Sakai \cite{r24}).}
 \end{figure}
 
@@ -465,7 +485,7 @@ The very first attempt to produce liquefaction susceptibility map of Kathmandu v
 
 \begin{figure}[!hbt]
 \centering
-\includegraphics[width=0.5\linewidth,keepaspectratio]{images/main/undp_susceptibility.jpg}
+\includegraphics[width=0.75\linewidth,keepaspectratio]{images/main/undp_susceptibility.jpg}
 \caption{UNDP/UNCHS Liquefaction Susceptibility Maps of 1994}
 \end{figure}
 
@@ -475,7 +495,7 @@ JICA prepared a map in 2002 based on qualitative method of evaluation of Liquefa
 
 \begin{figure}[!hbt]
 \centering
-\includegraphics[width=0.5\linewidth,keepaspectratio]{images/main/jica_sus.jpg}
+\includegraphics[width=0.75\linewidth,keepaspectratio]{images/main/jica_sus.jpg}
 \caption{Liquefaction Susceptibility Map Presented By JICA}
 \end{figure}
 
@@ -485,7 +505,7 @@ Liquefaction Susceptibility Map produced by JICA(2018), updated one from that pu
 
 \begin{figure}[!hbt]
 \centering
-\includegraphics[width=0.5\linewidth,keepaspectratio]{images/main/piya.png}
+\includegraphics[width=0.75\linewidth,keepaspectratio]{images/main/piya.png}
 \caption{ Liquefaction Susceptibility Map (Piya)}
 \end{figure}
 
@@ -493,19 +513,19 @@ Piya et al.(2004) have developed one using both of the qualitative and quantitat
 
 Subedi\cite{r28} produced another of the liquefaction susceptibility maps based on the qualitative method put forward by Youd\cite{r27}, using the borehole log from varoius places, although the data set was still limiting, of Kathmandu. The liquefaction susceptibility map was prepared for a/g = 0.3. The map though did only figure out the central zone to be more vulnerable to liquefaction. 
 
-Gautam\cite{r30} calculated LQI for various sites immediately after the Gorkha Earthquake, 2015. Bastola and Acharya\cite{r31} prepared another using quantitative methods of  liquefaction susceptibility map preparation. Liquefaction Potential Index(LPI) was calculated for various borehole data and the area most prone to liquefaction was highlighted in the map. 
+Gautam\cite{r18} calculated LQI for various sites immediately after the Gorkha Earthquake, 2015. Bastola and Acharya\cite{r31} prepared another using quantitative methods of  liquefaction susceptibility map preparation. Liquefaction Potential Index(LPI) was calculated for various borehole data and the area most prone to liquefaction was highlighted in the map. 
 
 \begin{figure}[!hbt]
 \centering
-\includegraphics[width=0.5\linewidth,keepaspectratio]{images/main/dipendra.png}
+\includegraphics[width=0.75\linewidth,keepaspectratio]{images/main/dipendra.png}
 \caption{Subedi et al. (2013), Liquefaction Susceptibility Map}
 \end{figure}
 
-Dipendra et. Al(2015)\cite{r30} computed FS for various localities of Kathmandu Valley using borehole log and tallied those computed values of the sites where liquefaction actually occured during the 2015 gorkha earthquake.
+Gautam et. Al(2015)\cite{r18} computed FS for various localities of Kathmandu Valley using borehole log and tallied those computed values of the sites where liquefaction actually occured during the 2015 gorkha earthquake.
 
 \begin{figure}[!hbt]
 \centering
-\includegraphics[width=0.5\linewidth,keepaspectratio]{images/main/bastola_acharya.png}
+\includegraphics[width=0.75\linewidth,keepaspectratio]{images/main/bastola_acharya.png}
 \caption{Liquefaction safety factor for for different borehole logs, D.Gautam et al.(2015)}
 \end{figure}
 

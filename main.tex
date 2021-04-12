@@ -1,6 +1,6 @@
-\documentclass[11pt, a4paper, hidelinks]{report}
+\documentclass[12pt, a4paper, hidelinks]{scrreprt}
 
-\usepackage[a4paper,width=150mm,top=25mm,bottom=25mm]{geometry}
+\usepackage[a4paper, margin=1.25in, left=1.5in, headheight=0.5in, footskip=0.5in]{geometry}
 \usepackage{graphicx}
 %\usepackage{titlecaps}
 \usepackage{boxedminipage}
@@ -28,11 +28,14 @@
   \endgroup
 }
 
+%\setlength{\parskip}{18pt}
+%\renewcommand{\baselinestretch}{1.5}
+
 %\makeindex
-\chapterfont{\bfseries}
-\sectionfont{\fontsize{13}{2}\selectfont}
-\subsectionfont{\fontsize{12}{2}\selectfont}
-\subsubsectionfont{\fontsize{11}{15}\selectfont}
+\chapterfont{\fontsize{16}{0}\selectfont}
+\sectionfont{\fontsize{14}{0}\selectfont}
+\subsectionfont{\fontsize{13}{0}\selectfont}
+\subsubsectionfont{\fontsize{12}{0}\selectfont}
 %paragraphfont
 %subparagraphfont
 
@@ -42,40 +45,41 @@
 \tikzstyle{arrow} = [thick,->,>=stealth]
 
 \begin{document}
-	\include{pages/title}
-	\include{pages/cover}
-	\include{pages/signpage}
+	%\include{pages/title}
+	%\include{pages/cover}
+	%\include{pages/signpage}
 	%%\newpage\null\thispagestyle{empty}\newpage
-	\pagenumbering{roman}
-	\include{pages/preface}
+	%\pagenumbering{roman}
+	%\include{pages/preface}
 	%\include{pages/limitationsofuse}
-	\include{pages/acknow}
+	%\include{pages/acknow}
 
 	%Tables
-	%tableofcontents
-	\listoftables
-	\listoffigures
-	\include{pages/sym}
+	%\tableofcontents
+	%\listoftables
+	%\listoffigures
+	%\include{pages/sym}
 
-	\include{pages/abstract}
-	\pagenumbering{arabic}
+	%\include{pages/abstract}
+	%\pagenumbering{arabic}
 	
 	% Now main contents
-	\include{pages/intro}
+	%\include{pages/intro}
 	\include{pages/lit_rev}
-	\include{pages/mat_meth}
+	%\include{pages/mat_meth}
 	%now Results
-	\include{pages/result}
-	\include{pages/discussion}
-	\include{pages/conclusion}
+	%\include{pages/result}
+	%\include{pages/discussion}
+	%\include{pages/conclusion}
+
+	%Bibilography
+	%\input{in/bib_in}
 
 	%Followed by annex
 	\appendix
-		\include{pages/annex-a}
-		\include{pages/annex-b}
-		\include{in/codes}
-		\include{in/demo}
+		%\include{pages/annex-a}
+		%\include{pages/annex-b}
+		%\include{in/codes}
+		%\include{in/demo}
 
-	%Bibilography
-	\input{in/bib_in}
 \end{document}
