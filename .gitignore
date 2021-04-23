@@ -1,6 +1,7 @@
 *.aux
 *.txt
 *.pdf
+!final.pdf
 *.toc
 *.log
 *.bbl
