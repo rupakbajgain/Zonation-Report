@@ -34,3 +34,18 @@ This file link:\url{https://github.com/rupakbajgain/Zonation-Report}
 
 \textbf{Material}
 \inputpython{../proj/soilbearing/blcalc/material.py}{48}{213}
+
+\textbf{Remove Outliers}
+\begin{python}
+def remove_outliers(x):
+    Q1 = np.quantile(x,0.25)
+    Q3 = np.quantile(x,0.75)
+    IQD = Q3 - Q1
+    minx = Q1 - IQD*1.5
+    maxx = Q3 + IQD*1.5
+    outx=[]
+    for v in x:
+        if minx<=v<=maxx:
+            outx.append(v)
+    return outx
+\end{python}

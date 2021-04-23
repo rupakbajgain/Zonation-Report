@@ -2,7 +2,7 @@
 Methodology is the systematic, theoretical analysis of the methods applied to a field of study. It comprises the theoretical analysis of the body of methods and principles associated with a branch of knowledge.
 
 \section{Working Steps}
-\begin{SCfigure}[][hbt]
+\begin{figure}[hbt]
 %flowchart here	
   \begin{tikzpicture}[node distance=2cm]
   \node (step1) [process, xshift=2.5cm] {Selection of Project};
@@ -19,8 +19,8 @@ Methodology is the systematic, theoretical analysis of the methods applied to a 
   \draw [arrow] (step4) |- (step6);
   \draw [arrow] (step5) |- (step6);
   \end{tikzpicture}
-\caption{Project Flowchart}
-\end{SCfigure}
+  \caption{Project Flowchart}
+\end{figure}
 
 \subsection{Selection of Project}
 As a matter of interest, we choose geotechnical field for our final year project. We discussed with our supervisor and attempted to try the Bearing Capacity Zonation and Liquefaction Potential Index Mapping. This project enables any future uses to find tentative bearing capacity and LPI of Kathmandu valley.
@@ -109,3 +109,17 @@ The value of $\nu$ is taken as:-
 
 \subsection{Determination of other parameters}
 Other parameters are calculated from Emperical Formulas in subsection ~\ref{emp-form}.
+
+\section{Removing Outliers}
+The outliers were removed by calculating $Q_1$ and $Q_3$ and calculating $IQD$. Then only values that were between $Q_1 - 1.5$ ILD and $Q_3 + 1.5$ ILD were selected for further calculation like mean and standard deviation.
+
+\section{Selection Median}
+In summary Terzaghi was excluded from shear since it has no depth corrections. Meyerhof ,Hansen, and Vesic give similar results so their average was used as a value. Finally median for summary was selected from every such values in that locations.
+
+\section{Correlation and Regression}
+Pearson’s Correlation was used for correlation. The regression was obtained by fitting 1st degree polynomial. The value of Pearson’s Correlation lies between -1 to +1. where
+\begin{itemize}
+\item \textbf{Positive Correlation}: both variables change in the same direction.
+\item \textbf{Neutral Correlation}: No relationship in the change of the variables.
+\item \textbf{Negative Correlation}: variables change in opposite directions.
+\end{itemize}

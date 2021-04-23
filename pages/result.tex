@@ -1,5 +1,5 @@
 \chapter{Result}
-104 Borehole Log Data of 31 locations inside Kathmandu and Lalitpur district areas were taken into consideration. The results were obtained after calculating Bearing Capacity at 1.5m, 3m, and 4.5m depth by shear criteria using Terzaghi, Meyerhof, Hansen, Vesic and Teng methods and Plaxis2D software and by deflection criteria using Bowels, Teng, Peck, Meyerhof  methods and Plaxis2D software. The median value of those methods are taken and mapped for those depths. Liquifaction Potential Index of the area is also mapped.
+104 Borehole Log Data of 31 locations inside Kathmandu and Lalitpur district areas were taken into consideration. The results were obtained after calculating Bearing Capacity at 1.5m, 3m, and 4.5m depth by shear criteria using Terzaghi, Meyerhof, Hansen, Vesic and Teng methods and Plaxis2D software and by deflection criteria using Bowels, Teng, Peck, Meyerhof methods and Plaxis2D software. The median value of those methods are taken and mapped for those depths. Liquefaction Potential Index of the area is also mapped. While mapping, to make the map uniform and consistent and for better results in interpolation, outlier values having too small or high values are disregarded.
 \pagebreak
 
 \section{Location Table}
@@ -19,7 +19,7 @@
 \pagebreak
 \end{landscape}
 
-\section{Shear Strength Table(KPa)}
+\section{Shear Strength Table(kPa)}
 \begin{table}[!h]
 \caption{Shear Strength Table}
 \input{../proj/soilbearing/secrets/shear_table}
@@ -29,7 +29,6 @@
 \begin{landscape}
 \section{1.5m Bearing Capacity(shear)\index{map}}
 \begin{figure}[!hbt]
-\centering
 \includegraphics[width=0.8\linewidth, height=0.8\textheight,keepaspectratio]{in/map/Shear_1_5.png}
 \caption{BC at 1.5m depth}
 \end{figure}
@@ -56,7 +55,7 @@
 \pagebreak
 \end{landscape}
 
-\section{Settlement Strength Table(KPa, for 25mm)}
+\section{Settlement Strength Table(kPa, for 25mm)}
 \begin{table}[!h]
 \caption{Settlement Strength Table}
 \input{../proj/soilbearing/secrets/settlement_table}
@@ -88,6 +87,53 @@
 \begin{figure}[!hbt]
 \centering
 \includegraphics[width=0.8\linewidth, height=0.8\textheight,keepaspectratio]{in/map/Deflection_4_5.png}
+\caption{BC at 3.0m depth}
+\end{figure}
+\pagebreak
+\end{landscape}
+
+\begin{landscape}
+\section{Relation of depth vs Bearing Capacity}
+\begin{figure}[!hbt]
+\centering
+\includegraphics[width=0.8\linewidth, height=0.8\textheight,keepaspectratio]{images/main/d_vs_bc.png}
+\caption{Relation of depth vs Bearing Capacity}
+\end{figure}
+\pagebreak
+\end{landscape}
+
+\section{Net Allowable Strength Table(kPa, for 25mm)}
+\begin{table}[!h]
+\caption{Net Allowable Strength Table}
+\input{../proj/soilbearing/secrets/na}
+\end{table}
+\pagebreak
+
+\begin{landscape}
+\section{1.5m Bearing Capacity(Net Allowable)\index{map}}
+\begin{figure}[!hbt]
+\centering
+\includegraphics[width=0.8\linewidth, height=0.8\textheight,keepaspectratio]{in/map/na_1_5.png}
+\caption{BC at 1.5m depth}
+\end{figure}
+\pagebreak
+\end{landscape}
+
+\begin{landscape}
+\section{3.0m Bearing Capacity(Net Allowable)\index{map}}
+\begin{figure}[!hbt]
+\centering
+\includegraphics[width=0.8\linewidth, height=0.8\textheight,keepaspectratio]{in/map/na_3_0.png}
+\caption{BC at 3.0m depth}
+\end{figure}
+\pagebreak
+\end{landscape}
+
+\begin{landscape}
+\section{4.5m Bearing Capacity(Net Allowable)\index{map}}
+\begin{figure}[!hbt]
+\centering
+\includegraphics[width=0.8\linewidth, height=0.8\textheight,keepaspectratio]{in/map/na_4_5.png}
 \caption{BC at 4.5m depth}
 \end{figure}
 \pagebreak
@@ -109,3 +155,151 @@
 \end{figure}
 \pagebreak
 \end{landscape}
+
+\section{Summary for Area}
+\textbf{Total Area:} 85546375.23 $m^2$\\
+\begin{center}
+\subsection{LPI}
+\begin{tabular}{|c | c | c|} 
+\hline
+Liquefaction Potential & Area($m^2$) & \% \\
+\hline
+Very low & 1156807.604 & 1.352257885 \\
+Low & 9528705.043 & 11.13864266 \\
+High & 64499949.72 & 75.39764198 \\
+Very High & 10360912.86 & 12.11145748 \\
+\hline
+\end{tabular}
+\hfill
+
+\subsection{Shear(1.5m)}
+\begin{tabular}{|c | c | c|} 
+\hline
+Soil Type & Area($m^2$) & \% \\
+\hline
+Weak soil & 6373.329037	& 0.007450145 \\
+Soft soil & 301298.4954	& 0.352204865 \\ 
+Medium & 878072.0773	& 1.026428151 \\
+Moderately hard & 2300390.906	& 2.689057134 \\
+Hard & 82055748.03	& 95.91960829 \\
+\hline
+\end{tabular}
+
+\subsection{Shear(3.0m)}
+\begin{tabular}{|c | c | c|} 
+\hline
+Soil Type & Area($m^2$) & \% \\
+\hline
+Weak soil & 4164.246861 & 0.004867824 \\
+Soft soil & 155524.4635 & 0.181801348 \\
+Medium & 437474.4461 & 0.511388641 \\
+Moderately hard & 819442.5286 & 0.957892753 \\
+Hard & 84125277.15 & 98.33879802 \\
+\hline
+\end{tabular}
+
+\subsection{Shear(4.5m)}
+\begin{tabular}{|c | c | c|} 
+\hline
+Soil Type & Area($m^2$) & \% \\
+\hline
+Weak soil & 2843.875905	& 0.003324368 \\
+Soft soil & 104410.8725	& 0.122051779 \\
+Medium & 551153.307	& 0.644274296 \\
+Moderately hard & 1246811.059 & 1.457468017 \\
+Hard & 83636663.72 & 97.76763012 \\
+\hline
+\end{tabular}
+\pagebreak
+
+\subsection{Settlement(1.5m)}
+\begin{tabular}{|c | c | c|} 
+\hline
+Soil Type & Area($m^2$) & \% \\
+\hline
+Weak soil & 2835547.411 & 3.314631863 \\
+Soft soil & 19632951.23 & 22.95006793 \\
+Medium & 46110603.92 & 53.90129482 \\
+Moderately hard & 11795026.1 & 13.78787361 \\
+Hard & 5167754.179 & 6.040880358 \\
+\hline
+\end{tabular}
+
+\subsection{Settlement(3.0m)}
+\begin{tabular}{|c | c | c|} 
+\hline
+Soil Type & Area($m^2$) & \% \\
+\hline
+Weak soil & 4475346.571 & 5.231485915 \\
+Soft soil & 26164648.6 & 30.58533869 \\
+Medium & 45074976.04 & 52.69069077 \\
+Moderately hard & 6731174.957 & 7.868451398 \\
+Hard & 3095736.665 & 3.618781808 \\
+\hline
+\end{tabular}
+
+\subsection{Settlement(4.5m)}
+\begin{tabular}{|c | c | c|} 
+\hline
+Soil Type & Area($m^2$) & \% \\
+\hline
+Weak soil & 10479251.05 & 12.24978969 \\
+Soft soil & 54117790.45 & 63.26134836 \\
+Medium & 18542807.26 & 21.67573694 \\
+Moderately hard & 1598689.918 & 1.868799133 \\
+Hard & 803344.1596 & 0.939074458 \\
+\hline
+\end{tabular}
+\pagebreak
+
+\subsection{Net Allowable(1.5m)}
+\begin{tabular}{|c | c | c|} 
+\hline
+Soil Type & Area($m^2$) & \% \\
+\hline
+Weak soil & 4475616.392 & 5.231801324\\
+Soft soil & 26166517.1 & 30.58752289\\
+Medium & 45080608.34 & 52.69727468\\
+Moderately hard & 6744721.273 & 7.884286452\\
+Hard & 3079822.333 & 3.600178646\\
+\hline
+\end{tabular}
+
+\subsection{Net Allowable(3.0m)}
+\begin{tabular}{|c | c | c|} 
+\hline
+Soil Type & Area($m^2$) & \% \\
+\hline
+Weak soil & 2835619.316 & 3.314715916\\
+Soft soil & 19634486.32 & 22.95186239\\
+Medium & 46130780.34 & 53.92488018\\
+Moderately hard & 11805693.59 & 13.80034345\\
+Hard & 5140705.862 & 6.00926205\\
+\hline
+\end{tabular}
+
+\subsection{Net Allowable(4.5m)}
+\begin{tabular}{|c | c | c|} 
+\hline
+Soil Type & Area($m^2$) & \% \\
+\hline
+Weak soil & 10480085.37 & 12.25076496 \\
+Soft soil & 54121503.26 & 63.26568849\\
+Medium & 18543457.22 & 21.67649672\\
+Moderately hard & 1598962.234 & 1.869117458\\
+Hard & 803277.3478 & 0.938996358\\
+\hline
+\end{tabular}
+\end{center}
+
+\pagebreak
+
+\section{Summary of Result from Various Methods}
+\begin{table}[!h]
+\caption{Methods summary Table}
+\input{../proj/soilbearing/secrets/methods_summary_table}
+\end{table}
+\pagebreak
+
+\section{Correlation and regression between methods}
+\input{../proj/soilbearing/secrets/methods_relation_table}

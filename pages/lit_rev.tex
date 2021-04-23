@@ -1,10 +1,10 @@
 \chapter{Literature Review}
 \section{Bearing Capacity}
-Foundation\index{Foundataion} is a part of a structure which is meant to transfer load from the superstructure to the ground taking care of shear failure and settlement. In this project we are going to calculate the bearing capacity of soil for the shallow foundation, so only design of shallow foundation is further discussed. Foundations are designed to have an adequate load capacity depending on the type of subsoil/rock supporting the foundation by a geotechnical engineer, and the footing itself may be designed structurally by a structural engineer. The primary design concerns are settlement and bearing capacity. When considering settlement, total settlement and differential settlement is normally considered. Differential settlement is when one part of a foundation settles more than another part. This can cause problems to the structure which the foundation is supporting. Expansive clay soils can also cause problems.
+Foundation\index{Foundataion} is a part of a structure which is meant to transfer load from the superstructure to the ground taking care of shear failure and settlement. In this project we are going to calculate the bearing capacity of soil for the shallow foundation, so only design of shallow foundation is further discussed. Foundations are designed to have an adequate load capacity depending on the type of subsoil/rock supporting the foundation by a geotechnical engineer, and the footing itself may be designed structurally by a structural engineer. The primary design concerns are settlement and bearing capacity under shear failure. When considering settlement, total settlement and differential settlement is normally considered. Differential settlement is when one part of a foundation settles more than another part. This can cause problems to the structure which the foundation is supporting. Expansive clay soils can also cause problems.
 
 Looking down the pages of the history books, the first ever theory on determination of bearing capacity was given by Rankine\index{Rankine} (1885). He considered the soil mass to be in plastic equilibrium\index{plastic equilibrium} and derived principle stresses\index{principle stress} values for different soil particles to complete his theory. This work was superseded by Prandtl\index{Pradtl} (1920) who considered punching shear failure\index{shear failure!punching} of soil masses to arrive to his formula for determining ultimate bearing capacity. After Prandtl, Hogentogler and Terzaghi\index{Terzaghi} derived another formula for ultimate bearing capacity approximating the actual curved failure surface which had been approximated as logarithmic spiral in theory given by Prandtl\index{Prandtl}.\cite{arora_soil_2004}
 \par
-Later in 1943, Terzaghi gave a general theory for the bearing capacity under a strip footing making a lot of assumptions like the footing was long enough, shear strength was governed by Mohr-Columb equation\index{mohr columb@Mohr-Columb}, and he also ignored the shear strength of the soil mass that was above the base of the footing.\cite{arora_soil_2004}
+Later in 1943, Terzaghi gave a general theory for the bearing capacity under a strip footing making a lot of assumptions like the footing was long enough, shear strength was governed by Mohr\-Columb equation\index{mohr columb@Mohr-Columb}, and he also ignored the shear strength of the soil mass that was above the base of the footing.\cite{arora_soil_2004}
 \par
 Up until now this theory has been revised a lot of times by many famous scientists, so that it can be worked out in various different cases. Meyerhof\index{Meyerhof} (1951), Vesic\index{Vesic} (1973), Skempton\index{Skempton} (1951), Hansen\index{Hansen} (1962), Teng\index{Teng} (1962) etc. have arrived at formulae specific to cases.\cite{arora_soil_2004}
 \par
@@ -45,7 +45,7 @@ q_s = q_{ns} + q
 
 \item \textbf{Net Safe Settlement Pressure($q_{n\rho}$):} It is net pressure which soil can carry without excessive settlement. For individual footing it is taken between 25mm and 40mm.
 
-\item \textbf{Net Allowable Bearing Pressure($q_{n\rho}$):} It is net bearing bearing pressure which can be used for the design of foundation. As there should be no shearing failure and settlement should also be within the limits, this is smaller of the $q_{ns}$ and $q_{n\rho}$. It is given as
+\item \textbf{Net allowable Bearing Pressure($q_{na}$):} It is net bearing bearing pressure which can be used for the design of foundation. As there should be no shearing failure and settlement should also be within the limits, this is smaller of the $q_{ns}$ and $q_{n\rho}$. It is given as
 \begin{equation}
 q_{na} = \begin{cases}
     q_{ns}, & \text{if } q_{n\rho} > q_{ns}\\
@@ -55,7 +55,7 @@ q_{na} = \begin{cases}
 \end{itemize}
 
 \subsection{Requirement for design and construction of foundation}
-The design and the construction of a well-performing foundation must possess some basic requirements: 
+The design and the construction of a well\-performing foundation must possess some basic requirements: 
 \begin{itemize}
 	\item 	The design and the construction of the foundation are done such that it can sustain as well as transmit the dead and the imposed loads to the soil. This transfer has to be carried out without resulting in any form of settlement that can result in any form of stability issues for the structure.
 	\item Differential settlements can be avoided by having a rigid base for the foundation. These issues are more pronounced in areas where the superimposed loads are not uniform in nature.
@@ -143,7 +143,7 @@ Factors affecting the Bearing Capacity of the soil are:\\
 \end{minipage}\\
 
 \subsection{Site Investigation Requirements}
-Site exploration\index{site exploration} shall be carried out by digging test pits, two as a minimum, and more if the subsurface soil condition shows a significant variation in soil type. Generally, the minimum depth of exploration for a building covered by this MRT shall be 2 m. In hilly areas, exploration up to the depth of sound bed-rock, if it lies shallower than 2 m, should suffice. No exploration shall be required if the site is located on rock or on fluvial terraces (Tar) with boulder beds. The soil encountered in the test pits should be classified as per Table ~\ref{foundation-soil-classification}.
+Site exploration\index{site exploration} shall be carried out by digging test pits, two as a minimum, and more if the subsurface soil condition shows a significant variation in soil type. Generally, the minimum depth of exploration for a building covered by this MRT shall be 2 m. In hilly areas, exploration up to the depth of sound bedrock, if it lies shallower than 2 m, should suffice. No exploration shall be required if the site is located on rock or on fluvial terraces (Tar) with boulder beds. The soil encountered in the test pits should be classified as per Table ~\ref{foundation-soil-classification}.
 \begin{table}
   \centering
   \caption{Foundation Soil Classification and Safe bearing Capacity}
@@ -157,9 +157,9 @@ Site exploration\index{site exploration} shall be carried out by digging test pi
   \end{tabular}
 \end{table} 
 \subsection{Standard Penetration Test}
-The SPT\index{SPT} is an in-situ dynamic penetration test designed to provide information of the geotechnical engineering properties of soils. The test is conducted in a bore hole\index{bore hole} by means of a standard split spoon sampler. Once the drilling is done to the desired depth, the drilling tool is removed and the sampler is placed inside the bore hole. By means of a drop hammer\index{drop hammer} of 63.5kg mass falling through a height of 750mm at the rate of 30 blows per minute, the sampler is driven into the soil. This is as per IS -2131:1963.The number of blows of hammer required to drive a depth of 150mm is counted. Further it is driven by 150 mm and the blows are counted. Similarly, the sampler\index{sampler} is once again further driven by 150mm and the number of blows recorded. The number of blows recorded for the first 150mm not taken into consideration. The number of blows recorded for last two 150mm intervals are added to give the standard penetration number\index{SPT!N} (N) in other words no of blows required for 150mm penetration beyond seating drive of 150mm. If the number of blows for 150mm drive exceeds 50, it is taken as refusal and the test is discontinued. The standard penetration number is corrected for dilatancy correction\index{correction!dilatancy} and overburden correction\index{correction!overburden}. There are many parameters of soils which can be correlated with SPT N-value, such as density, undrained shear strength, friction angle, modulus, etc. SPT N-value is accepted as an important indicator and is most widely used to describe soil characteristics\index{soil characterstics}.\cite{mahoto_bearing_2012}
+The SPT\index{SPT} is an in\-situ dynamic penetration test designed to provide information of the geotechnical engineering properties of soils. The test is conducted in a bore hole\index{bore hole} by means of a standard split spoon sampler. Once the drilling is done to the desired depth, the drilling tool is removed and the sampler is placed inside the bore hole. By means of a drop hammer\index{drop hammer} of 63.5kg mass falling through a height of 750mm at the rate of 30 blows per minute, the sampler is driven into the soil. This is as per IS 2131:1963.The number of blows of hammer required to drive a depth of 150mm is counted. Further it is driven by 150 mm and the blows are counted. Similarly, the sampler\index{sampler} is once again further driven by 150mm and the number of blows recorded. The number of blows recorded for the first 150mm not taken into consideration. The number of blows recorded for last two 150mm intervals are added to give the standard penetration number\index{SPT!N} (N) in other words no of blows required for 150mm penetration beyond seating drive of 150mm. If the number of blows for 150mm drive exceeds 50, it is taken as refusal and the test is discontinued. The standard penetration number is corrected for dilatancy correction\index{correction!dilatancy} and overburden correction\index{correction!overburden}. There are many parameters of soils which can be correlated with SPT N\-value, such as density, undrained shear strength, friction angle, modulus, etc. SPT N-value is accepted as an important indicator and is most widely used to describe soil characteristics\index{soil characterstics}.\cite{mahoto_bearing_2012}
 \subsubsection{Problems with SPT}
-The Standard Penetration Test recovers a highly disturbed sample, which is generally not suitable for tests which measure properties of the in-situ soil structure, such as density, strength, and consolidation characteristics. However, this results in blow counts which are not easily converted to SPT N-values.  Many conversions have been proposed, some of which depend on the type of soil sampled, making reliance on blow counts with non-standard samplers problematic.
+The Standard Penetration Test recovers a highly disturbed sample, which is generally not suitable for tests which measure properties of the in\-situ soil structure, such as density, strength, and consolidation characteristics. However, this results in blow counts which are not easily converted to SPT N\-values.  Many conversions have been proposed, some of which depend on the type of soil sampled, making reliance on blow counts with non\-standard samplers problematic.
 \par
 Standard Penetration Test blow counts do not represent a simple physical property of the soil, and thus must be correlated to soil properties of interest, such as strength or density.
 \subsubsection{SPT Correction for field procedure}
@@ -168,7 +168,7 @@ Dilatancy correction is done for fine sand /silt and below water table and N $>$
 N'= 15 + \frac{1}{2} (N - 15)
 \end{equation}
 
-The SPT values have been corrected in accordance with the proposal of Skempton\index{Skempton}, (1986) and Liao and Whitman (1987) as outlined below with consideration of field procedure, hammer efficiency, borehole diameter, and sample and rod length. Correction of SPT N-value\index{SPT!correction} using the relation after Skempton (1986) \cite{panthi_bearing_2018}
+The SPT values have been corrected in accordance with the proposal of Skempton\index{Skempton}, (1986) and Liao and Whitman (1987) as outlined below with consideration of field procedure, hammer efficiency, borehole diameter, and sample and rod length. Correction of SPT N\-value\index{SPT!correction} using the relation after Skempton (1986) \cite{panthi_bearing_2018}
 \begin{equation}
 N_{60cs}= E_m * C_B * C_s * C_R * \frac{N'}{0.6}
 \end{equation}\\
@@ -200,7 +200,7 @@ N_{60} = N_{60cs} * C_\sigma
 \end{gather}
 
 \subsection{Some Empirical Relationships} \label{emp-form}
-Peak\index{Peak}, Hansen\index{Hansen} \& Thompson\index{Thompson} (1974)\cite{kulhawy_manual_1990}
+Peck\index{Peck}, Hansen\index{Hansen} \& Thornburn\index{Thornburn} (1974)\cite{kulhawy_manual_1990}
 \begin{gather}
 {\phi}_{deg}=27.1+0.3*N_{60}-0.00054*N_{60}^2 \label{phi-form}\\
 {\gamma}_{sat}(kN/m^3)= \begin{cases}
@@ -212,11 +212,11 @@ Peak\index{Peak}, Hansen\index{Hansen} \& Thompson\index{Thompson} (1974)\cite{k
 where, $P_a$ = 100 $kN/m^2$
 
 \subsection{Relation to packing ratio}
-Table ~\ref{cbsf-table} show relation of SPT-N\index{SPT!N} to packing ratio.
+Table ~\ref{cbsf-table} show relation of SPT\-N\index{SPT!N} to packing ratio.
 
 \begin{table}
   \centering
-  \caption{Correlation between SPT-N value and soil packing(Meyerhof 1956)}
+  \caption{Correlation between SPT\-N value and soil packing(Meyerhof 1956)}
   \label{cbsf-table}
   \begin{tabular}{|c|c|l|}
   \hline &\bfseries{SPT N3(1ft)} & \bfseries{Soil packing} \\
@@ -241,7 +241,7 @@ The general bearing capacity derived by Terzaghi\index{Terzaghi} for square foot
 \begin{gather}
 Q_u = 1.3 * C * N_c + q_0 * N_q * R_{W1} + 0.4 * {\gamma} * B * N_{\gamma} * R_{W2} \\
 N_c = \cot \phi (N_q - 1)\\
-N_q = \exp ^ 2 (\frac{3\phi}{4} - \frac{\phi}{2}) \frac{\tan \phi}{2 \cos ^2 (45 + \frac{\phi}{2})}\\
+N_q = \frac {e ^ {2 \pi (0.75 - \phi'/360)*\tan(\phi')} } {2 \cos ^2 (45 + \frac{\phi}{2})}\\
 N_{\gamma} = \frac{\tan \phi (\frac{K_p}{\cos ^2 \phi} - 1)}{2}\\
 K_p= \tan ^ 2 (45 + \frac{\phi}{2})\\
 R_{W1} = 0.5 (1 +\frac{D_{W1}}{D_f}) \text{, if } (\frac{D_{W1}}{D_f})\le 1 \\
@@ -260,13 +260,13 @@ Assumptions in Terzaghi’s Bearing Capacity Theory.
 \end{enumerate}
 
 \subsection{Meyerhof’s Bearing Capacity Theory}
-In 1951, Meyerhof\index{Meyerhof} published a bearing capacity theory which could be applied to rough shallow and deep foundations. Meyerhof (1951, 1963) proposed a bearing-capacity equation similar to that of Terzaghi but included a shape factor $S_q$ with the depth term $N_q$. He also included depth factors and inclination factors.\cite{mey_book}
+In 1951, Meyerhof\index{Meyerhof} published a bearing capacity theory which could be applied to rough shallow and deep foundations. Meyerhof (1951, 1963) proposed a bearing\-capacity equation similar to that of Terzaghi but included a shape factor $S_q$ with the depth term $N_q$. He also included depth factors and inclination factors.\cite{mey_book}
 \par
 The failure surface at ultimate load under a continuous foundation as assumed by Meyerhof (1951) is shown in Figure ~\ref{meyerhof-analysis}. In this figure, abc is the elastic triangular wedge shown in Figure ~\ref{meyerhof-analysis}, bcd is the radial shear zone with cd being an arc of a log spiral, and bdef is a mixed shear zone in which the shear varies between the limits of radial and plane shear depending on the depth and roughness of the foundation. The plane be is referred to as an equivalent free surface. The normal and shear stresses on the plane be are $P_o$ and $s_o$, respectively. The superposition method is used to determine the contribution of cohesion (c), on the ultimate bearing capacity $Q_u$ of the continuous foundation and can be expressed as
 \begin{gather}
 Q_u = C * N_c * S_c * d_c + q_0 * N_q * S_q * d_q + 0.5 * {\gamma} * B * N_{\gamma}*S_{\gamma}*d_{\gamma}\\
-N_c = \exp^{\pi * \tan(\phi)} * \tan^2 ( 45 + \frac{\phi}{2} )\\
-N_q = \cot(\phi)*(N_q - 1)\\
+N_q = \exp^{\pi * \tan(\phi)} * \tan^2 ( 45 + \frac{\phi}{2} )\\
+N_c = \cot(\phi)*(N_q - 1)\\
 N_{\gamma} = (N_q-1) * \tan(1.4*\phi)\\
 S_c = 1 + 0.2 * K_p\\
 S_q=1+0.1*K_p\\
@@ -283,11 +283,11 @@ K_p= \tan ^ 2 (45 + \frac{\phi}{2})
 \end{figure}
 
 \subsection{Hansen’s Bearing Capacity Theory}
-As shown by Milovic (1965), Terzaghi theory gives high ultimate bearing capacity for cohesion less soil which is dangerous and it gives conservative bearing capacity for cohesive soil so Hansen\index{Hansen} (1961) developed equations which are in better agreement with experimental values. Ultimate bearing capacity is given by, \cite{arora_soil_2004}
+The Hansen bearing capacity equation is an extension of the Terzaghi method which includes foundations on slopes and other conditions not considered in the Terzaghi method. And He also adjusted the values to give answer more inclined with the experiment. The Hansen equation implicitly allows any $\frac{D}{B}$ and thus can be used for both shallow and deep bases.
 \begin{gather}
 Q_u = C * N_c * S_c * d_c * i_c + q_0 * N_q * S_q * d_q * i_q + 0.5 * {\gamma} * B * N_{\gamma}*S_{\gamma}*d_{\gamma} * i_{\gamma}\\
-N_c = \exp^{\pi * \tan(\phi)} * \tan^2 ( 45 + \frac{\phi}{2} )\\
-N_q = \cot(\phi)*(N_q - 1)\\
+N_q = \exp^{\pi * \tan(\phi)} * \tan^2 ( 45 + \frac{\phi}{2} )\\
+N_c = \cot(\phi)*(N_q - 1)\\
 N_{\gamma} = 1.8 * (N_q-1) * \tan(\phi)
 \end{gather}
 For square footing,
@@ -301,11 +301,11 @@ i_{\gamma} = i_q^2
 \end{gather}
 
 \subsection{Vesic's Bearing Capacity Theory}
-Vesic\index{Vesic} (1973) confirmed that the basic nature of failure surfaces in soil as suggested by Terzaghi as incorrect. However, the angle which the inclined surfaces AC and BC make with the horizontal was found to be closer to 45 + $\frac{\phi}{2}$ instead of 45 . The values of the bearing capacity factors , for a given angle of shearing resistance change if above modification is incorporated in the analysis as under: \cite{arora_soil_2004}
+Vesic\index{Vesic} (1973) confirmed that the basic nature of failure surfaces in soil as suggested by Terzaghi as incorrect. He made same assumtions as that of Hansen.  However, the angle which the inclined surfaces AC and BC make with the horizontal was found to be closer to 45 + $\frac{\phi}{2}$ instead of 45 . The values of the bearing capacity factors , for a given angle of shearing resistance change if above modification is incorporated in the analysis as under: \cite{arora_soil_2004}
 \begin{gather}
 Q_u = C * N_c * S_c * d_c * i_c + q_0 * N_q * S_q * d_q * i_q + 0.5 * {\gamma} * B * N_{\gamma}*S_{\gamma}*d_{\gamma} * i_{\gamma}\\
-N_c = \exp^{\pi * \tan(\phi)} * \tan^2 ( 45 + \frac{\phi}{2} )\\
-N_q = \cot(\phi)*(N_q - 1)\\
+N_q = \exp^{\pi * \tan(\phi)} * \tan^2 ( 45 + \frac{\phi}{2} )\\
+N_c = \cot(\phi)*(N_q - 1)\\
 N_{\gamma} = 2 * (N_q+1) * \tan(\phi)\\
 S_c = 1 + \frac{N_q}{N_c}\\
 S_q = 1+ \tan(\phi)\\
@@ -333,7 +333,7 @@ q_nu = 0.11 N^2 B {W_\gamma} + 0.33 (100+N^2)D_f*{W_\gamma}
 \end{equation}
 
 \subsection{Peck method}
-Terzaghi and Peck (1967) gave charts for the safe bearing pressures introducing a total settlement of 25 mm and a differential settlement of 19 mm for different footings. Peck et al (1974) revised the Terzaghi and Peck curves to consider in later research, and gave following equations for the safe settlement pressure.\cite{arora_soil_2004}
+Terzaghi and Peck (1967) gave charts for the safe bearing pressures introducing a total settlement of 25 mm and a differential settlement of 19 mm for different footings. Peck  (1974) revised the Terzaghi and Peck curves to consider in later research, and gave following equations for the safe settlement pressure.\cite{arora_soil_2004}
 \begin{equation}
 q_{n\rho} = 0.41 C_w Ns
 \end{equation}
@@ -379,7 +379,7 @@ PLAXIS\index{PLAXIS} is a finite element program for geotechnical applications i
 
 \subsection{Geographic information system}
 Geographical Information System (GIS) is a computer based information system used to digital represent and analyze the geographical features, present on the Earth’s surface and events that taking place on it. The meaning of GIS is to represent digitally is to convert analogue (smooth line) into digital form.
-“Every object present on the Earth can be geo-referenced”, is the fundamental key of associating any database to GIS. Here, the term ‘database’ is a collection of information about thing and their relationship to each other and ‘geo referencing’ refers to the location of a layer or coverage in space defined by co-ordinate reference system.
+“Every object present on the Earth can be geo\-referenced”, is the fundamental key of associating any database to GIS. Here, the term ‘database’ is a collection of information about thing and their relationship to each other and ‘geo referencing’ refers to the location of a layer or coverage in space defined by co\-ordinate reference system.
 
 Work on GIS began in late 1950s, but first GIS software came only in late 1970s from lab of the ESRI. Canada was the pioneer in the development of GIS as a result of innovation dating back to early 1960s. Much of the credit for the early development of GIS goes to Roger Tomilson. Evolution of GIS has transformed and revolution and revolutionized and the ways in which planners, engineers, managers etc. conduct the database management and analysis.
 
@@ -390,27 +390,27 @@ Map is a small scale representation of Earth’s surface. Representation of eart
 Every Spatial features needs to be referenced GIS use. Spatial reference systems provide a framework to define positions on the Earth’s surface. We are used to working with coordinate systems, but due to Earth’s irregular system, this method becomes intricate. Here we represent spherical or ellipsoidal surface of earth in flat plane. For that we use projection of earth on a cylindrical surface. This can be done in many methods, we use MUTM (Modified Universal Traverse Mercator) which divides Earth into 120 parts of 3 degree each for using projections, which is slightly better than UTM projection for calculations in Nepal. We use MUTM coordinate system with 84 degree datum.
 
 \subsubsection{QGIS}
-QGIS is a free and open-source cross-platform desktop geographic information system (GIS) application that supports viewing, editing, and analysis of geospatial data. It allowing users to analyze and edit spatial information, in addition to composing and exporting graphical maps. It is a good alternative of ArcGIS which is free and has a large community. It is written in C++ available under the conditions of the GPL license. It is based on the C++ crossplattform library Qt from Trolltech. Therefore, it runs on most existing operating systems, including Linux, Unix, Mac OS X and Windows. 
+QGIS is a free and open\-source cross\-platform desktop geographic information system (GIS) application that supports viewing, editing, and analysis of geospatial data. It allowing users to analyze and edit spatial information, in addition to composing and exporting graphical maps. It is a good alternative of ArcGIS which is free and has a large community. It is written in C++ available under the conditions of the GPL license. It is based on the C++ crossplattform library Qt from Trolltech. Therefore, it runs on most existing operating systems, including Linux, Unix, Mac OS X and Windows. 
 
-The main focus of QGIS is interactive two dimensional viewing of spatial data. However, there is also functionality for editing vector data and a GRASS plugin to use the analytical functionality of the GRASS program from within the QGIS GUI. QGIS supports a large number of vector and raster formats, including PostGIS, GRASS, Shapefile, GML, WFS, GPX, WMS, GeoTiff, PNG, JPG and many others. QGIS supports reprojecting on-the-fly for vector data.
+The main focus of QGIS is interactive two dimensional viewing of spatial data. However, there is also functionality for editing vector data and a GRASS plugin to use the analytical functionality of the GRASS program from within the QGIS GUI. QGIS supports a large number of vector and raster formats, including PostGIS, GRASS, Shapefile, GML, WFS, GPX, WMS, GeoTiff, PNG, JPG and many others. QGIS supports reprojecting on\-the\-fly for vector data.
 %--------------------------------------------------------------------------------------------------------------------------------------------------------------
 \section{Liquefaction}
 \subsection{Introduction}
-Liquefaction is one of the major causes of heavy destruction during a seismic event. It occurs in the deposit of loose and saturated sand with certain range of percentage of fines \cite{r11}. The occurrence of liquefaction is distributed around the epicentre and is generally observed near river, lakes owing to the favourable soil properties and the ground water level there.  Loose sand tends to contract during the earthquakes which causes the pore water pressure in the voids to rise, and with the proper drainage not available either due to the deposit being a large one or due to the lower values of permeability of the deposit, which causes the pore water pressure to further rise up to the effective stress, resulting in a temporary loss of shear strength, imparting the liquid like behaviour to the deposit. The liquid like behaviour of the sand deposit introduces large deformations in the structures resting on the ground above the deposit. Lateral spread, sand boiling and surface cracks are the prominent effects observed during a liquefaction event.
+Liquefaction is one of the major causes of heavy destruction during a seismic event. It occurs in the deposit of loose and saturated sand with certain range of percentage of fines \cite{r11}. The occurrence of liquefaction is distributed around the epicentre and is generally observed near river, lakes owing to the favourable soil properties and the ground water level there.  Loose sand tends to contract during the earthquakes proper drainage not available either due to the deposit being a large one or due to the lower values of coefficient of permeability of the deposit, which causes the pore water pressure to rise and perhaps beyond the value of effective stress at the considered level. It results in the temporary loss of shear strength imparting liquid like behavior to the deposit. This introduces large deformation in the structures resting on the ground above the deposit.  This introduces large deformations in the structures resting on the ground above the deposit. Lateral spread, sand boiling and surface cracks are the prominent effects observed during a liquefaction event.
 
-Most dramatic illustrations of the damages due to liquefaction to the civil-engineering structures were observed during the 1964 Niigata Earthquake and Alaska Earthquake occurring in the same year. The results of those liquefaction were dramatic bearing failures beneath the buildings, floating of the underground tanks and collapse and damages to several bridges nearer to the epicentre. These events for the first time drew attention of the engineering community towards the scientific study of the phenomenon. Since then, it has frequently been observed, recorded and studied during various major seismic events occurring around the globe. 
+Most dramatic instances of the damages due to liquefaction to the civil\-engineering structures were observed during the 1964 Niigata and Alaska Earthquake. The results of those liquefaction were substantial incidents of bearing failures beneath the buildings, floating of the underground tanks and collapse and damages to several bridges nearer to the epicentre. These events for the first time drew attention of the engineering community towards the scientific study of the phenomenon. Since then, it has frequently been observed, recorded and studied during various major earthquakes occurring around the globe. 
 
-The documentation and study of such events have been playing a vital role in prediction of occurrence of liquefaction at a certain place and broadly into the understanding of the phenomenon itself. Several techniques have been developed along the years, which can be broadly be grouped under :
+The documentation and study of such events have been playing a vital role in understanging of the phenomenon of liquefaction at a certain place. Several techniques have been developed along the years, which can be broadly be grouped under :
 \begin{enumerate}
-\item methods that are based off the soil properties which are determined by laboratory testing
-\item methods that are based off the In- situ test results
-\item methods that are based off numerical modelling
+\item methods that are based on the soil properties which are determined by laboratory testing
+\item methods that are based on the In\- situ test results
+\item methods that are based on numerical modelling
 \item combination of laboratory testing and back analysis of any past records of occurrence of liquefaction.
 \end{enumerate}
 
-In this report, liquefaction hazard mapping has been done by the 2nd method from site observed SPT values.
+In this report, liquefaction hazard mapping has been done by the $2^{nd}$ method from site observed SPT values.
 
-The causes of liquefaction during a seismic event can be attributed to the loss of local shear strength due to the undrained conditions being established under the cyclic loading introduced by the shaking. However, the parameters which assist in establishment of such conditions can be separately discussed as follows:
+The causes of liquefaction during a seismic event can be attributed to the loss of local shear strength due to the undrained conditions being established under the cyclic loading introduced by the shaking. However, the parameters which assist in establishment of such conditions can be in broad discussed as follows:
 
 \begin{itemize}
 \item Seismic causes
@@ -419,12 +419,14 @@ Intensity of the earthquake basically depends upon the magnitude of the earthqua
 Liquefaction generally occurs at the places nearer to the water bodies as the land nearby is ever saturated. Moreover, the young deposition of sand with no past history of exposure to the shaking due to the quake with uniform gradation in very loosely packed state makes the site much more vulnerable.
 \end{itemize}
 
-The dynamic strength of soil is affected strongly by the characteristics of soil grain such as grain size, grain shape, grain distribution and mineral composition. Seed \cite{r12} presented the relationship between the liquefaction resistance and the mean grain size ($D_{50}$). The liquefaction resistance increases with increasing with the $D_{50}$ of soil specimen. Ishibashi\cite{r14}  showed that for a given mean grain size ($D_{50}$), soil specimen with well-graded grain distribution have lightly greater liquefaction resistance than that with uniform grain size distribution.
+The dynamic strength of soil is affected strongly by the characteristics of soil grain such as grain size, grain shape, grain distribution and mineral composition. Seed presented the relationship between the liquefaction resistance and the mean grain size ($D_{50}$).\cite{r12} The liquefaction resistance increases with increasing with the $D_{50}$ of soil specimen. Ishibashi  showed that for a given mean grain size ($D_{50}$), soil specimen with well\-graded grain distribution have lightly greater liquefaction resistance than that with uniform grain size distribution.\cite{r14}
 
-Concerning the fine content in a soil, several studies show that the liquefaction resistance of the soil will first go on decreasing with increasing fine content, reach to a minimum value and then go on increasing afterwards. 
+Concerning the fine content in a soil, several studies show that the liquefaction resistance of the soil will first go on decreasing with increasing fine content, reach to a minimum value and then go on increasing afterwards. Above 70\% silt content hazard of the liquefaction was found substantially low.\cite{r14} Tokimatsu and Yoshimi further concluded that the sand with more than 10\% fines have much greater liquefaction resistance than clean sands with same SPT N\-values.\cite{r17}
 
-Factors affecting the cyclic strength with the level of effect \cite{r13}
-
+Factors affecting the cyclic strength with the level of effect is shown in Table ~\ref{fac-tab}. \cite{r13}
+\begin{table}[!hbt]
+\label{fac-tab}
+\caption{Factors affecting the cyclic strength with level of effect}
 \begin{tabularx}{\textwidth}{ |X|X|X| }
 \hline
 Factors Affecting Liquefaction & Pure Sand & Sand with silt content \\
@@ -450,14 +452,15 @@ Time Effect & R & R \\
 Volume change during shear strain \(\gamma < 0.5 \%\) & U & U \\
 \hline
 \end{tabularx}
-
-Note:
+\end{table}
+\\
+Note:\\
 \begin{tabular}{l l}
 V: Major effect factor & L : Minor effect factor\\
 R: Light effect factor & U : Significance unknown
 \end{tabular}
 
-Regarding the silty soils in specific, so called Chinese Criteria \cite{r20} has been presented in Seed et. Al \cite{r12} , which is as follows:
+Regarding the silty soils in specific, so called Chinese Criteria \cite{r20} has been presented in Seed  \cite{r12} , which is as follows:
 
 \begin{itemize}
 \item Clay Content (defined as \% finer than 0.005 mm) \textless 15\%
@@ -465,17 +468,17 @@ Regarding the silty soils in specific, so called Chinese Criteria \cite{r20} has
 \item Water Content \textgreater 0.9 * Liquid Limit
 \end{itemize}
 
-With increasing relative density, it is much unfavourable for the soil element to develop excess pore water pressure. The liquefaction study carried out by Seed \cite{r14} post Nigata earthquake led to the result that the soil liquefaction was much likely to occur when the relative density was about 50\%. Above 70\% silt content hazard of the liquefaction was found substantially low. Mulilis \cite{r15} presented that the liquefaction resistance of soil has liquefaction resistance of soil has linear relationship with the relative density as the relative density of soil is less than 70\%, and the relationship is also a function of confining pressure.
+With increasing relative density, it is much unfavourable for the soil element to develop excess pore water pressure. The liquefaction study carried out by Seed post Nigata earthquake led to the result that the soil liquefaction was much likely to occur when the relative density was about 50\%. Mulilis presented that the liquefaction resistance of soil has liquefaction resistance of soil has linear relationship with the relative density as the relative density of soil is less than 70\%, and the relationship is also a function of confining pressure.\cite{r15}
 
-Tokimatsu and Yoshimi \cite{r17} further concluded that the sand with more than 10\% fines have much greater liquefaction resistance than clean sands with same SPT N-values. Liquefaction resistance of soil increases with increasing of the confining stress as demonstrated by Seed \cite{r16}, based on the results of the cyclic triaxial test, however the required cyclic shear stress ratio to develop liquefaction decreases with increasing effective confining pressure.
+Liquefaction resistance of soil increases with increasing of the confining stress as demonstrated by Seed, based on the results of the cyclic triaxial test, however the required cyclic shear stress ratio to develop liquefaction decreases with increasing effective confining pressure.\cite{r16}
 
-\subsubsection{Geology of Kathmandu Valley}
-Kathmandu valley is geologically characterized by occurrence of fluvio-lacustrine sediments of Pliocene to Quaternary age that comprise Kathmandu complex with Phulchoki and Bhimphedi group as basement rocks. Thickness of sediment deposit is varied according to the location. For instance, the central valley consists unconsolidated sediments of about 550–600 m depth and the depth is limited to 50–70 m at the edges. 
+\subsubsection{Geology of Kathmandu Valley and liquefaction susceptibility}
+Kathmandu valley is geologically characterized by occurrence of fluvio\-lacustrine sediments of Pliocene to Quaternary age that comprise Kathmandu complex with Phulchoki and Bhimphedi group as basement rocks. Thickness of sediment deposit is varied according to the location. For instance, the central valley consists unconsolidated sediments of about 550–600 m depth and the depth is limited to 50–70 m at the edges. Several studies(JICA, UNDP) to be discussed conclude that the river basins in particular are much vulnerable. Some recent ones(Gautam et al) show that the Kalimati formation is the most hazardous formation in Kathmandu Valley.
 
 \begin{figure}[!hbt]
 \centering
 \includegraphics[width=0.75\linewidth,keepaspectratio]{images/main/geological_cross_section.png}
-\caption{A schematic cross-section showing the stratigraphic framework and depositional environments of the basin-fill sediments in the Kathmandu Valley (from Sakai \cite{r24}).}
+\caption{A schematic cross\-section showing the stratigraphic framework and depositional environments of the basin\-fill sediments in the Kathmandu Valley (from Sakai \cite{r24}).}
 \end{figure}
 
 \subsubsection{Liquefaction Susceptibility Maps of Kathmandu}
@@ -509,31 +512,30 @@ Liquefaction Susceptibility Map produced by JICA(2018), updated one from that pu
 \caption{ Liquefaction Susceptibility Map (Piya)}
 \end{figure}
 
-Piya et al.(2004) have developed one using both of the qualitative and quantitative methods proposed by Juang\cite{r25}, Iwasaki\cite{r26} and Seed and Idriss\cite{r12}. The map divides the valley into 5 categories: no, very low, low, moderate and high on the basis of susceptibility to liquefaction. The core areas of the valley and the areas along the flood plains as indicated previously by other maps were again found to be vulnerable to liquefaction from the study.
+Piya (2004) have developed one using both of the qualitative and quantitative methods proposed by Juang\cite{r25}, Iwasaki\cite{r26} and Seed and Idriss\cite{r12}. The map divides the valley into 5 categories: no, very low, low, moderate and high on the basis of susceptibility to liquefaction. The core areas of the valley and the areas along the flood plains as indicated previously by other maps were again found to be vulnerable to liquefaction from the study.
 
 Subedi\cite{r28} produced another of the liquefaction susceptibility maps based on the qualitative method put forward by Youd\cite{r27}, using the borehole log from varoius places, although the data set was still limiting, of Kathmandu. The liquefaction susceptibility map was prepared for a/g = 0.3. The map though did only figure out the central zone to be more vulnerable to liquefaction. 
-
-Gautam\cite{r18} calculated LQI for various sites immediately after the Gorkha Earthquake, 2015. Bastola and Acharya\cite{r31} prepared another using quantitative methods of  liquefaction susceptibility map preparation. Liquefaction Potential Index(LPI) was calculated for various borehole data and the area most prone to liquefaction was highlighted in the map. 
-
+ 
+ 
 \begin{figure}[!hbt]
 \centering
 \includegraphics[width=0.75\linewidth,keepaspectratio]{images/main/dipendra.png}
-\caption{Subedi et al. (2013), Liquefaction Susceptibility Map}
+\caption{Subedi . (2013), Liquefaction Susceptibility Map}
 \end{figure}
 
-Gautam et. Al(2015)\cite{r18} computed FS for various localities of Kathmandu Valley using borehole log and tallied those computed values of the sites where liquefaction actually occured during the 2015 gorkha earthquake.
+Gautam (2015)\cite{r18} computed FS for various localities of Kathmandu Valley and also the LPI corresponding to those boreholes using SPT data.
 
 \begin{figure}[!hbt]
 \centering
 \includegraphics[width=0.75\linewidth,keepaspectratio]{images/main/bastola_acharya.png}
-\caption{Liquefaction safety factor for for different borehole logs, D.Gautam et al.(2015)}
+\caption{Liquefaction safety factor for for different borehole logs, D.Gautam .(2015)}
 \end{figure}
 
 Bastola and Acharya(2016)\cite{r31} prepared another using quantitative methods of  liquefaction susceptibility map preparation. Liquefaction Potential Index(LPI) was calculated for various borehole data and the area most prone to liquefaction was highlighted in the map. 
 
 \subsection{Methods for liquefaction calculation}
-There are qualitative and quantitative methods and deterministic and probabilistic approaches to assess the liquefaction potential. In this research, the stress-based approach suggested by Idriss and Boulanger\cite{idris_and_bolinger} has been adopted to perform an analysis of the factor of safety (FS) with respect to liquefaction on each layer and Iwasaki et al. \cite{r26} method has been used to estimate the liquefaction potential index(LPI) of the sites.
-The stress-based approach for evaluating the potential 1-or liquefaction triggering, initiated by Seed and Idriss \cite{idris_seed}, has been used widely for the last 45 years. The basic framework, as adopted by numerous researchers, compares the earthquake-induced cyclic stress ratios (CSR) with the cyclic resistance ratios (CRR) of the soil. This method uses the Standard Penetration Test (SPT) blow count data and geotechnical properties of the soil layers to predict the earthquake potential.
+There are qualitative and quantitative methods and deterministic and probabilistic approaches to assess the liquefaction potential. In this research, the stress\-based approach suggested by Idriss and Boulanger\cite{idris_and_bolinger} has been adopted to perform an analysis of the factor of safety (FS) with respect to liquefaction on each layer and Iwasaki . \cite{r26} method has been used to estimate the liquefaction potential index(LPI) of the sites.
+The stress\-based approach for evaluating the potential 1\-or liquefaction triggering, initiated by Seed and Idriss \cite{idris_seed}, has been used widely for the last 45 years. The basic framework, as adopted by numerous researchers, compares the earthquake\-induced cyclic stress ratios (CSR) with the cyclic resistance ratios (CRR) of the soil. This method uses the Standard Penetration Test (SPT) blow count data and geotechnical properties of the soil layers to predict the earthquake potential.
 \subsection{Stress based approach}
 Stress based approach suggested by Idriss and Boulanger \cite{idris_and_bolinger} to find Factor of Safety. In this method, the stress (loading) that results in liquefaction is defined as the cyclic stress ratio (CSR), and the property of the soils to resist liquefaction is termed as the cyclic resistance ratio (CRR). The FS with respect to liquefaction can be calculated using:
 \begin{equation}
@@ -601,7 +603,7 @@ r_d = exp[ -1.012 - 1.126 (\frac{z}{11.73} + 5.133) + M_w( 0.106 + 0.118 \sin ( 
 Here, z is the soil depth in m.
 
 \subsection{Liquefaction potential index}
-We consider 20 m depth for analysis of liquefaction potential of soil. Higher weightage is given to uppermost layers of soil as top layers are more responsible for liquefaction. We use Iwasaki et al. method to obtain liquefaction potential index by integrating safety factors on upper 20 m soil column as follows.
+We consider 20 m depth for analysis of liquefaction potential of soil. Higher weightage is given to uppermost layers of soil as top layers are more responsible for liquefaction. We use Iwasaki . method to obtain liquefaction potential index by integrating safety factors on upper 20 m soil column as follows.
 
 \begin{equation}
 LPI = \int_{0}^{20} F(z).W(z).dz
